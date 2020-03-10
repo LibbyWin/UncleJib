@@ -1,6 +1,6 @@
 <img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
 
-Welcome USER_NAME,
+Welcome Wini996,
 
 This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project.
 
@@ -33,3 +33,19 @@ We continually tweak and adjust this template to help give you the best experien
 --------
 
 Happy coding!
+
+--------
+
+Welcome to Uncle Jib's!
+
+The Snow Sports Specialists
+
+Here at Uncle Jib's we are a family run retailers who love snow and everything to do with it. We will get you the right equipment
+We are all about the experience here at Uncle Jib's and want to bring you the very best experience when using our site. We hope you 
+all enjoy browsing and hope to see you again soon.
+
+Uncle Jib's webshope has been designed and built by Libby Winfield as a final project for the Code Institute Full Stack Web Development 
+Diploma. The purpose of this shopping site is to allow for new customers to shop on a safe and secure site in order to shop for the latests
+snowboards and equipment. Specifically aimed at customers who enjoy being outdoors in the snowy mountains looking for the highest quality 
+and stylist snowbaords to suit their riding needs.
+
