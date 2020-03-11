@@ -1,17 +1,16 @@
 from django.conf.urls import url, include
-from accounts.views import logout, login, registration, user_profile
-from accounts import urls_reset
-
+from . import urls_reset
+from .views import index, register, profile, logout, login
 
 urlpatterns = [
-    # Takes you to registration page
-    url(r'^register/$', registration, name="registration"),
-    # Takes you to profile
-    url(r'^profile/$', user_profile, name="profile"),
-    # Tskes you to logout
-    url(r'^logout/$', logout, name="logout"),
-    # Takes you to login
-    url(r'^login/$', login, name="login"),
-    # Will reset your password
-    url(r'^password-reset/', include(urls_reset))
+    #take you to register page
+    url(r'^register/$', register, name='register'),
+    #take you to profile
+    url(r'^profile/$', profile, name='profile'),
+    #take you to logout
+    url(r'^logout/$', logout, name='logout'),
+    #take you to login page
+    url(r'^login/$', login, name='login'),
+    #will reset your password
+    url(r'^password-reset/', include(urls_reset)),
 ]
