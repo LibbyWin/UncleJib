@@ -18,3 +18,23 @@ footer {
 .accountform {
     padding-top: 20px;
 }
+
+/* footer section */
+.footer {
+    background: #303030;
+    color: #d3d3d3;
+    height: 400px;
+    position: relative;
+}
+
+.footer .footer-bottom {
+    text-align: center;
+    background: #272727;
+    color: #949494;
+    height: 50px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding-top: 20px;
+    width: 100%;
+}
