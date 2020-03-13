@@ -29,7 +29,13 @@ body, html {
 .footer .footer-content {
     border: 1px solid red;  /* delete this */
     height: 350px;
+    display: flex;
+}
 
+.footer .footer-section .footer-content {
+    flex: 1;
+    border: 1px solid white;
+    padding: 25px;
 }
 
 .footer .footer-bottom {
