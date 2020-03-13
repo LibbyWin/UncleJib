@@ -4,7 +4,7 @@ body, html {
     height: 100%;
 }
 
-/* middle section of the page */
+/*                                                 middle section of the page                      */
 
 .page-wrapper {
     min-height: 100%;
@@ -18,7 +18,8 @@ body, html {
     padding-top: 20px;
 }
 
-/* footer section */
+/*                                                  footer section                              */
+
 .footer {
     background: #303030;
     color: #d3d3d3;
@@ -26,18 +27,72 @@ body, html {
     position: relative;
 }
 
+/* styles the footer section height and block */
 .footer .footer-content {
-    border: 1px solid red;  /* delete this */
     height: 350px;
     display: flex;
 }
 
-.footer .footer-section .footer-content {
+/* styles the about in footer section */
+.footer .footer-content .footer-section  {
     flex: 1;
     border: 1px solid white;
     padding: 25px;
 }
 
+/* styles teh footer headers */
+.footer .footer-content h1,
+.footer .footer-content h2 {
+    color: white;
+}
+
+/* styles the footer title of the webpage */
+.footer .footer-content .about h1 span {
+    color: #00e1ff;
+}
+
+/* styles the icons and hover  */
+.footer .footer-content .about .socials a {
+    border: 1px solid gray;
+    width: 40px;
+    height: 40px;
+    padding-top: 5px;
+    margin-right: 5px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.3em;
+    border-radius: 5px;
+    transition: all .0.5s;
+}
+
+/* styles the icons and hover  */
+.footer .footer-content .about .socials a:hover {
+    border: 1px solid white;
+    color: #00e1ff;
+    transition: all .0.5s;
+}
+/* styles the icons (phone and email) */
+.footer .footer-content .about .contact span{
+    display: block;
+    font-size: 1em;
+    margin-bottom: 8px;
+}
+
+/* stytles the middle categories sections links */
+.footer .footer-content .links ul a {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+/* stytles the middle categories sections links and hover colour transition*/
+.footer .footer-content .links ul a:hover {
+    color: #00e1ff;
+    margin-left: 10px;
+    transition: all 0.5s;
+} 
+
+/* bottom footer copyright section */
 .footer .footer-bottom {
     text-align: center;
     background: #272727;
