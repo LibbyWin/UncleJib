@@ -1,14 +1,13 @@
-body {
+body, html {
     font-family: Arial;
     margin-top: 50px;
+    height: 100%;
 }
 
-footer {
-    margin-top: 40px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    border-top: 1px solid #ededed;
-    color: #A9A9A9;
+/* middle section of the page */
+
+.page-wrapper {
+    min-height: 100%;
 }
 
 .icon-bar {
@@ -25,6 +24,12 @@ footer {
     color: #d3d3d3;
     height: 400px;
     position: relative;
+}
+
+.footer .footer-content {
+    border: 1px solid red;  /* delete this */
+    height: 350px;
+
 }
 
 .footer .footer-bottom {
