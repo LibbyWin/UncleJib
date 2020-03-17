@@ -3,6 +3,11 @@ body, html {
     margin-top: 50px;
     height: 100%;
 }
+/*                                                 header of the page                      */
+.navbar {
+    background-color: black;
+}
+
 
 /*                                                 middle section of the page                      */
 
@@ -20,6 +25,7 @@ body, html {
 
 /*                                                  footer section                              */
 
+/* style to the footer section of the page */
 .footer {
     background: #303030;
     color: #d3d3d3;
@@ -36,7 +42,6 @@ body, html {
 /* styles the about in footer section */
 .footer .footer-content .footer-section  {
     flex: 1;
-    border: 1px solid white;
     padding: 25px;
 }
 

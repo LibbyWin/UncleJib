@@ -49,3 +49,8 @@ Diploma. The purpose of this shopping site is to allow for new customers to shop
 snowboards and equipment. Specifically aimed at customers who enjoy being outdoors in the snowy mountains looking for the highest quality 
 and stylist snowbaords to suit their riding needs.
 
+
+
+
+
+LOGO CREATED BY ME ONLINE AT WWW.DESIGNEVO.COM
