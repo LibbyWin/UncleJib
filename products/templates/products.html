@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <!--heading-->
+        <div class="col-12">
+            <h1>{{ product.title}}</h1>
+        </div>
+        <div class="col-12 col-lg-8">
+            <div class="row"></div>
+                <!--MainImage-->
+                <div class="col-12 col-ld-9">
+                    <img id="main-pic" scr="{{ product.product_image_01.url }}" alt="product.title">
+                </div>
+
+                <!--other lttle images-->
+                <div class="col-12 col-lg-3">
+                    <div class="little-images" style="background-image: url('{{ product.product_image_01 }}')">
+                    </div>
+
+                    {% if product.product_image_02 %}
+                    <div class="little-images" style="background-image: url('{{ product.product_image_02 }}')">
+                    </div>
+
+                    {% if product.product_image_03 %}
+                    <div class="little-images" style="background-image: url('{{ product.product_image_03 }}')">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    {% for product in products %}
+        <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4 display panel panel-default">
+            <div class="panel-body">
+                <div class="product" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')"></div>
+
+                <h3>{{ product.name }}</h3>
+                <p class="product-description">{{ product.description }}</p>
+                <p>{{ product.price }}</p>
+
+                <form method="post" action="{% url 'add_to_cart' product.id %}">
+                    {% csrf_token %}
+                    <div class="input-group">
+                        <input name="quantity" type="number" min="1" max="999" class="form-control" placeholder="Quantity">
+                        <span class="input-group-btn">
+                            <button class="btn btn-success" type="submit">Add</button>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+</div>
+{% endblock %}
