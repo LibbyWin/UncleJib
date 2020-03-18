@@ -3,14 +3,32 @@ body, html {
     margin-top: 50px;
     height: 100%;
 }
-/*                                                 header of the page                      */
+/*                                                 nav bar of the page                    */
 
 
 /*                                                 middle section of the page                      */
 
-.page-wrapper {
-    min-height: 100%;
+/*                                                 products.html page                         */
+
+.create-account {
+    font-size: 2em;
 }
+
+/*                                                  product page styling                           */
+/*large main pic */
+.main-pic {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/*smaller images*/
+.little-images {
+    height: 50px;
+    width: 50px;
+    background-size: cover;
+    display: inline-block;
+}
+
 
 
 /*                                                  footer section                              */
