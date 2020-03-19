@@ -1,6 +1,6 @@
-from django.conf.urls import url, incluse
+from django.conf.urls import url, include
 from .views import all_products
 
-urlspatterns = [
+urlpatterns = [
     url(r'^$', all_products, name='products'),
 ]

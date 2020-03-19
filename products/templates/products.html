@@ -5,26 +5,26 @@
     <div class="row">
         <!--heading-->
         <div class="col-12">
-            <h1>{{ product.title}}</h1>
+            <h1>{{ product.title }}</h1>
         </div>
         <div class="col-12 col-lg-8">
             <div class="row">
                 <!--MainImage-->
                 <div class="col-12 col-ld-9">
-                    <img id="main-pic" scr="{{ product.product_image_01.url }}" alt="product.title">
+                    <img id="main-pic" scr="{{ product.image_01.url }}" alt="{{ product.title }}">
                 </div>
 
                 <!--other lttle images-->
                 <div class="col-12 col-lg-3">
-                    <div class="little-images" style="background-image: url('{{ product.product_image_01 }}')">
+                    <div class="little-images" style="background-image: url('{{ product.image_01 }}')">
                     </div>
 
                     {% if product.product_image_02 %}
-                    <div class="little-images" style="background-image: url('{{ product.product_image_02 }}')">
+                    <div class="little-images" style="background-image: url('{{ product.image_02 }}')">
                     </div>
 
                     {% if product.product_image_03 %}
-                    <div class="little-images" style="background-image: url('{{ product.product_image_03 }}')">
+                    <div class="little-images" style="background-image: url('{{ product.image_03 }}')">
                     </div>
                 </div>
             </div>
@@ -35,7 +35,7 @@
             <div class="panel-body">
                 <div class="product" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')"></div>
 
-                <h3>{{ product.name }}</h3>
+                <h3>{{ product.title }}</h3>
                 <br>
                 <p>{{ product.price }}</p>
 
@@ -67,7 +67,7 @@
                 Information
             </h4>
             <p class="indi-product-description">
-                <strong>Size:</strong>{{ product.size }}cm
+                <strong>Size:</strong>{{ product.size }} cm
             </p>
             <hr>
             <p class="indi-product-description">
