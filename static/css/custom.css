@@ -5,13 +5,20 @@ body, html {
 }
 /*                                                 nav bar of the page                    */
 
-
 /*                                                 middle section of the page                      */
 
-/*                                                 products.html page                         */
 
-.create-account {
-    font-size: 2em;
+
+/*                                                 register.html page                         */
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    padding: 10px;
 }
 
 /*                                                  product page styling                           */
@@ -29,6 +36,9 @@ body, html {
     display: inline-block;
 }
 
+.create-account {
+    font-size: 2em;
+}
 
 
 /*                                                  footer section                              */
