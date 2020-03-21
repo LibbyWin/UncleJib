@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h1>Return Information</h1>
+            <hr>
+            <h4 class="blue-text">QUESTION</h4>
+            <p>ANSWER</p>
+            
+            <hr>
+            <h4 class="blue-text">ENVIRONMENTAL FEATURES ETC</h4>
+            <p>------------------------------------</p>
+            <p>------------------------------------</p>
+            
+            <p>------------------------------------</p>
+            <hr>
+
+            <div class="text-center m-4">
+                <p>Cant find your question? Why not write to use! We aim to reply to all your questions within 24hours.</p>
+
+                <a href="{% url 'contact' %}" class="btn btn-cta btn-submit">Get in touch</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

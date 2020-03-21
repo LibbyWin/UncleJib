@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="blue-text">Delivery Information</h1>
+            <hr>
+            <h3>Free Standard Delivery On Selected Items</h3>
+            <p>Free standard delievery is available on a wide variety of products across the entire store</p>
+            <p>All orders over £150 will qualify for free delievery within the England, Scotland and Wales.</p>
+            <p>All orders over £250 will qualify for free delivery across europe. <strong>Please Note</strong> 
+                This only includes France, Spain, Switzerland, Italy, Germany, Croatia, Austria, Czechia, Portugal
+                , Belgium, Netherlands, Hungary and Ireland</p>
+            
+            <hr>
+            <h4 class="blue-text">Environmental Features</h4>
+            <p></p>
+            <p>------------------------------------</p>
+            
+            <p>------------------------------------</p>
+            <hr>
+
+            <div class="text-center m-4">
+                <p>Cant find your question? Why not write to use! We aim to reply to all your questions within 24hours.</p>
+
+                <a href="{% url 'contact' %}" class="btn btn-cta btn-submit">Get in touch</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
