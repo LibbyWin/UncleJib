@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-
+{% block content %}
 <div class="container">
     <div class="row">
         <div class="col-12">
@@ -13,7 +13,7 @@
             </div>
             <div class="col-12 col-md-4 mb-3">
                 <p>
-                     here at Uncle Jib's, we know how much the right snowboard can effect your riding capability. We have picked out and categorised 
+                     Here at Uncle Jib's, we know how much the right snowboard can effect your riding capability. We have picked out and categorised 
                     the major 6 styles of snowboarding including...
                 </p>
                 <p>
@@ -34,6 +34,15 @@
                     For this we know that you need the correct board that matches with your riding style. With a wide variety on site
                      we always try to have at least 12 different types of each riding style, to ensure you have a selection to choose from.
                 </p>
+
+                <hr>
+                    <h4 class="blue-text">Environmental Features</h4>
+                        <p>We understand that our world is being destroyed by Green House Gases(GHGs).
+                        To help fight back, we only use sustainable products which have been branded 
+                        and highlighted to encourage mindful shopping. Within our warehouse, we have Solar 
+                        PV and thermal generating electriciy and heat provided by the sun to allow. This is just one of the 
+                        many measures we take to help fight back at GHGs!</p>
+
                 </div>
                 <div class="col-12 text-center">
                     <a href="{% url 'all-products' %}" class="btn btn-cta btn-submit mb-5">View Snowboards</a>
