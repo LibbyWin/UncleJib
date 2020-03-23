@@ -1,9 +1,143 @@
 {% extends 'base.html' %}
-
-
-
-
-
-
 {% block content %}
-{% endblock%}
+
+
+
+<!--photo gallery of the mountains and snow-->
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+            <img src="snowboarding-1.jpg" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+        <img src="snowboarding-2.jpg" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+        <img src="snowboarding-3.jpg" style="width:100%">
+    </div>
+
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<!--Info part of index page-->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <div class="containter">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="header-main-page">
+                            Welcome to Uncle Jib's
+                        </h1>
+                        <h3 class="underheader">
+                            ----------------------------------------------------
+                            #EnjoyTheRide
+                        </h3>
+                        <p>
+                            ---------------------
+                        </p>
+                        <p>
+                            --------------------
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <!--Shopping section-->
+
+            <div class="row row-cols-1 row-cols-md-2">
+                <div class="col mb-4">
+                    <div class="card">
+                        <img src="../images/all-mountain.jpg" class="card-img-top" alt="All Mountain Snowboards">
+                            <div class="card-body">
+                                <h5 class="card-title">All Mountain</h5>
+                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-md-2">
+                <div class="col mb-4">
+                    <div class="card">
+                        <img src="../images/big.jpg" class="card-img-top" alt="Big Mountain Snowboards">
+                            <div class="card-body">
+                                <h5 class="card-title">Big Mountain</h5>
+                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-md-2">
+                <div class="col mb-4">
+                    <div class="card">
+                        <img src="../images/free.jpg" class="card-img-top" alt="Freestyle Snowboards">
+                            <div class="card-body">
+                                <h5 class="card-title">Freestyle</h5>
+                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-md-2">
+                <div class="col mb-4">
+                    <div class="card">
+                        <img src="../images/pipe.jpg" class="card-img-top" alt="Park and Pipe Snowboards">
+                            <div class="card-body">
+                                <h5 class="card-title">Park and Pipe</h5>
+                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-md-2">
+                <div class="col mb-4">
+                    <div class="card">
+                        <img src="../images/jib.jpg" class="card-img-top" alt="Street and Jib Snowboards">
+                            <div class="card-body">
+                                <h5 class="card-title">Street and Jib</h5>
+                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-md-2">
+                <div class="col mb-4">
+                    <div class="card">
+                        <img src="../images/boarder.jpg" class="card-img-top" alt="BoarderCross Snowboards">
+                            <div class="card-body">
+                                <h5 class="card-title">BoarderCross</h5>
+                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+<!--JS for the carosel gallery -->
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 5000); // Change image every 5 seconds
+}
+</script>
+
+{% endblock %}
+
