@@ -1,9 +1,30 @@
 body, html {
     font-family: Arial;
-    margin-top: 50px;
+
     height: 100%;
+
 }
+
 /*                                                 nav bar of the page                    */
+/* cart styling  on the nav bar */
+.badge {
+    padding-left: 9px;
+    padding-right: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px;
+}
+
+.label-warning[href],
+.badge-warning[href] {
+    background-color: #c67605;
+}
+
+.navbar-brand {
+    vertical-align: middle;
+    border-style: none;
+    width: 200px;
+}
 
 /*                                                 index.html page                    */
 * {box-sizing: border-box;}
@@ -52,12 +73,53 @@ img {vertical-align: middle;}
   from {opacity: .4} 
   to {opacity: 1}
 }
+/* image of the products */
+.product {
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+/* description of the product*/
+caption p {
+    word-wrap: break-word;
+}
+
+/* flex wrap */ 
+.row.row-flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+/*display our products */
+.panel-default {
+    border-color: transparent;
+    padding: 0 10px;
+}
+
+.panel-body {
+    height: 100%;
+    border: 1px solid #ddd;
+}
+
+.product-description {
+    min-height: 40px;
+}
+
 /* MEDIA QUERIES*/
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
 }
 
+@media (min-width: 992px) .col-lg-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+}
 /*                                                 middle section of the page                      */
 
 
@@ -75,6 +137,7 @@ img {vertical-align: middle;}
 }
 
 /*                                                  product page styling                           */
+
 /*large main pic */
 .main-pic {
     width: 100%;
@@ -102,33 +165,34 @@ img {vertical-align: middle;}
     color: #d3d3d3;
     height: 400px;
     position: relative;
+    width: 100%;
 }
 
 /* styles the footer section height and block */
-.footer .footer-content {
+.footer-content {
     height: 350px;
     display: flex;
 }
 
 /* styles the about in footer section */
-.footer .footer-content .footer-section  {
+.footer-section  {
     flex: 1;
     padding: 25px;
 }
 
 /* styles teh footer headers */
-.footer .footer-content h1,
-.footer .footer-content h2 {
+.footer-content h1,
+.footer-content h2 {
     color: white;
 }
 
 /* styles the footer title of the webpage */
-.footer .footer-content .about h1 span {
+.about h1 span {
     color: #00e1ff;
 }
 
 /* styles the icons and hover  */
-.footer .footer-content .about .socials a {
+.socials a {
     border: 1px solid gray;
     width: 40px;
     height: 40px;
@@ -142,34 +206,34 @@ img {vertical-align: middle;}
 }
 
 /* styles the icons and hover  */
-.footer .footer-content .about .socials a:hover {
+.socials a:hover {
     border: 1px solid white;
     color: #00e1ff;
     transition: all .0.5s;
 }
 /* styles the icons (phone and email) */
-.footer .footer-content .about .contact span{
+.contact span{
     display: block;
     font-size: 1em;
     margin-bottom: 8px;
 }
 
 /* stytles the middle categories sections links */
-.footer .footer-content .links ul a {
+.ul a {
     display: block;
     margin-bottom: 10px;
     font-size: 1em;
 }
 
 /* stytles the middle categories sections links and hover colour transition*/
-.footer .footer-content .links ul a:hover {
+.ul a:hover {
     color: #00e1ff;
     margin-left: 10px;
     transition: all 0.5s;
 } 
 
 /* bottom footer copyright section */
-.footer .footer-bottom {
+.footer-bottom {
     text-align: center;
     background: #272727;
     color: #949494;

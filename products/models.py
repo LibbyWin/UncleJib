@@ -15,8 +15,8 @@ class Product(models.Model):
     year = models.CharField(max_length=100, default='')
     flex = models.CharField(max_length=100, default='')
     shape = models.CharField(max_length=100, default='')
-    rider_prodile = models.CharField(max_length=100, default='')
-    board_proflie = models.CharField(max_length=100, default='')
+    rider_profile = models.CharField(max_length=100, default='')
+    board_profile = models.CharField(max_length=100, default='')
     condition = models.CharField(max_length=100, default='')
    
     def __str__(self):
