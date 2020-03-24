@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+    <!--custome stylesheet for fontawesome-->
+    <link rel="stylesheet" href="{% static 'font-awesome/css/font-awesome.min.css' %}">
     <!-- custom css-->
     <link rel="stylesheet" href="..static/css/custom.css">
 </head>
@@ -50,6 +52,14 @@
                     <a class="nav-link" href="{% url 'login' %}">Login</a>
                 </li>
                 {% endif  %}
+                <li>
+                    <a href="{% url 'view_cart' %}">
+                        <i class="fa fa-shipping-cart"></i>Cart
+                        {% if product_count > 0 %}
+                        <label class="badge badge-warning">{{ product_count }}</label>
+                        {% endif %}
+                    </a>
+                </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Snowboards
@@ -66,12 +76,26 @@
                     </div>
                 </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
         </div>
 </nav>
+<!--ADDED SEARCH BAR-->
+{% if messages %}
+    <div class="alert alert-success">
+        <div class="messages">
+            {% for message in messages %}
+                {{ message }}
+            {% endfor %}
+        </div>
+    </div>
+{% endif %}
+    <div class="container">
+        <div class="display">
+            <form action="{% url 'search' %}" method="get">
+                <input type="text" name="q">
+                <button type="search">Search</button>
+            </form>
+        </div>
+    </div>
 <!-- END OF NAV BAR -->
 
 
@@ -119,16 +143,16 @@
 								<li>Jib/Street Boards</li>
 							</a>
 							<a href="#">
-								<li>FreeRider Boards</li>
+								<li>All Mountain Boards</li>
 							</a>
 							<a href="#">
-								<li>All Mountain Boards</li>
+								<li>Big Mountain Boards</li>
 							</a>
                 			<a href="#">
 								<li>BoarderCross Boards</li>
 							</a>
 							<a href="#">
-								<li>Big Mountain Boards</li>
+								<li>FreeRider Boards</li>
                     		</a>
 						</ul>
             </div>
