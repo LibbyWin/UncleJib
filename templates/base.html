@@ -27,7 +27,7 @@
 
 <!--Nav Bar-->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Uncle Jib's</a>
+    <a class="navbar-brand" href="{% url 'index' %}">Uncle Jib's</a>
          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -35,7 +35,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item ">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="{% url 'index' %}">Home <span class="sr-only">(current)</span></a>
                 </li>
                 {% if user.is_authenticated %}
                 <li class="nav-item">
@@ -114,8 +114,8 @@
 
 
 <div class="footer">
-    <div class="cont`1ainer">
-        <div class="row">
+
+        <div class="row row-flex">
             <div class="col-sm">
                 <h1 class="logo"><span>Uncle Jib's</span></h1>
                     <p>Here at Uncle Jib's we are a family run retailers who love snow and everything to do with it.
@@ -127,7 +127,6 @@
                     <div class="socials">
 					    <a href="www.facebook.com"><i class="fab fa-facebook"></i></a>
 						<a href="www.instagram.com"><i class="fab fa-instagram"></i></a>
-				    	<a href="www.snapchat.com"><i class="fab fa-snapchat"></i></a>
 				    	<a href="www.twitter.com"><i class="fab fa-twitter"></i></a>
 				    </div>
             </div>
@@ -137,7 +136,7 @@
                 <h2>Categories</h2>
 						<br>
 						<ul>
-							<a href="#">
+							<a href="">
 								<li>Park/Pipe Boards</li>
 							</a>
 							<a href="#">
@@ -163,25 +162,25 @@
                  <h2>Useful Links</h2>
 					    <br>
 					    <ul>
-					        <a href="#">
+					        <a href="{% url 'about' %}">
 	    			        	<li>About</li>
 					        </a>
-    					    <a href="#">
+    					    <a href="{% url 'contact' %}">
 	    				    	<li>Contact</li>
 		    			    </a>
-			    		    <a href="#">
+			    		    <a href="{% url 'faqs' %}">
 				    	    	<li>FAQ's</li>
 					        </a>
-    					    <a href="#">
+    					    <a href="{% url 'delivery' %}">
 	    				        <li>Delivery</li>
 		    			    </a>
-			    		    <a href="#">
+			    		    <a href="{% url 'returns' %}">
 				    	    	<li>Returns</li>
             		        </a>
     					</ul>
             </div>
         </div>
-    </div>
+
 </div>
 
 </body>

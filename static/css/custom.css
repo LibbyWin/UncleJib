@@ -161,8 +161,6 @@ caption p {
 
 /* style to the footer section of the page */
 .footer {
-    background-color: #303030;
-    color: #d3d3d3;
     height: 400px;
     position: relative;
     width: 100%;

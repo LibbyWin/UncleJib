@@ -1,51 +1,27 @@
-from django.shortcuts import render, redirect
-from . import views
-
+from django.shortcuts import render
 
 # Create your views here.
+
 def about(request):
-    context = {
-        'about_page': 'active'
-    }
+    """A View that renders the about page"""
+    return render(request, "about.html")
 
-    return render(request, 'pages/about.html', context)
-
-
+def contact(request):
+    """A View that renders the contact page"""
+    return render(request, "contact.html")
 
 def delivery(request):
-    context = {
-        'delivery_page': 'active'
-    }
-
-    return render(request, 'pages/delivery.html', context)
-
+    """A View that renders the delivery page"""
+    return render(request, "delivery.html")
 
 def faqs(request):
-    context = {
-        'faqs_page': 'active'
-    }
-
-    return render(request, 'pages/faqs.html', context)
-
-
-def index(request):
-    context = {
-        'index_page': 'active'
-    }
-
-    return render(request, 'pages/index.html', context)
+    """A View that renders the faqs page"""
+    return render(request, "faqs.html")
 
 def returns(request):
-    context = {
-        'returns_page': 'active'
-    }
+    """A View that renders the returnss page"""
+    return render(request, "returns.html")
 
-    return render(request, 'pages/returns.html', context)
-
-# Create your views here.
-def contact(request):
-    context = {
-        'contact_page': 'active'
-    }
-
-    return render(request, 'pages/contact.html', context)
+def index(request):
+    """A view that renders the index page"""
+    return render(request,"index.html")
