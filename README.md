@@ -25,12 +25,12 @@ and stylist snowbaords to suit their riding needs.
 - browse categories of snowboards
 - 
 
-WHAT USERS EXPECT/NEED/want
--
--
--
--
--
+## WHAT USERS EXPECT/NEED/want
+- 
+- 
+- 
+- 
+- 
 - 
 
 
@@ -75,7 +75,7 @@ WHAT USERS EXPECT/NEED/want
 - sales
 - newsletter
 - subscribe
-- 
+- order details
 
 ##DATABASE MODELS
 
@@ -125,62 +125,26 @@ WHAT USERS EXPECT/NEED/want
 | Quantity | quantity | blank=False | IntegerField |
 
 ## Technologies used
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
+- **Django** as a python framework.
+- **AWS S3** Bucket to store images which are entered into the database.
+- **Stripe** as a payment platform.
+- **Heroku** for deployment
+- **Pillow** as a python library for processing images.
+- **Git** as version control.
+- **Github** to allow storing and sharing the project remotely.
+- **Whitenoise** allows the web app to have tis one static files.
+- **Boto3** to enable management and 
+- **Sqlite3** for a development database.
+- **Bootstrap** to provide simple structure to th website and making it mobile responsive.
+- **Font Awesome** to provide the icons for the site.
+- **Google Fonts** to style we websites fonts.
+- **JQuery** as DOM manipulation.
+- **HTML**
+- **CSS**
+- **Java** Script
+- **Python**
+- **Gitpod** was used to develop the entire site.
 
-
-
-
-Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how 
-your project is the best way to help them achieve these things.
-
-In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
-- As a user type, I want to perform an action, so that I can achieve a goal.
-
-This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. 
-These files should themselves either be included as a pdf file in the project itself (in an separate directory), or just hosted elsewhere online 
-and can be in any format that is viewable inside the browser.
-
-
-## Features
-
-In this section, you should go over the different parts of your project, and describe each in a sentence or so.
- 
-### Existing Features
-- Feature 1 - allows users X to achieve Y, by having them fill out Z
-- ...
-
-For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
-
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
-
-### Features Left to Implement
-- Another feature idea
-
-## Technologies Used
-
-In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. 
-For each, provide its name, a link to its official site and a short sentence of why it was used.
-
-- [JQuery](https://jquery.com)
-    - The project uses **JQuery** to simplify DOM manipulation.
 
 
 ## Testing
@@ -218,20 +182,15 @@ In particular, you should provide all details of the differences between the dep
 
 In addition, if it is not obvious, you should also describe how to run your code locally.
 
-
-## Credits
-
 ### Content
 - The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
 
 ### Media
-- The photos used in this site were obtained from ...
+- Logo created by me online at www.designevo.com
 
 ### Acknowledgements
 
-- I received inspiration for this project from X
+- I received inspiration for this project from multiple shopping sites such as ridestore.com, absolute-snow.com and many more.
+- 
 
 
-
-
-LOGO CREATED BY ME ONLINE AT WWW.DESIGNEVO.COM
