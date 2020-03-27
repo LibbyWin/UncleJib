@@ -1,181 +1,41 @@
 {% extends 'base.html' %}
+{% load static %}
 
-{% block title %}Index {% endblock %}
+{% block title %} Index {% endblock %}
 
 {% block content %}
 
-
-
-<!--photo gallery of the mountains and snow     /W3C-->
-<div class="slideshow-container">
-
-    <div class="mySlides fade">
-            <img src="../images/snowboarding-1.jpg" style="width:100%">
-    </div>
-    <div class="mySlides fade">
-        <img src="../images/snowboarding-2.jpg" style="width:100%">
-    </div>
-    <div class="mySlides fade">
-        <img src="../images/snowboarding-3.jpg" style="width:100%">
-    </div>
-
-</div>
-<br>
-    <div style="text-align:center">
-        <span class="dot"></span> 
-        <span class="dot"></span> 
-        <span class="dot"></span> 
-    </div>
-
-<!--Info part of index page-->
 <div class="container-fluid">
     <div class="row">
-        <div class="col-12">
-            <div class="containter">
-                <div class="row">
-                    <div class="col-12">
-                        <h1 class="header-main-page">
-                            Welcome to Uncle Jib's
-                        </h1>
-                        <h3 class="underheader">
-                            #EnjoyTheRide
-                        </h3>
-                        <p>
-                            Here at Uncle Jib's, we started out in 1953 by a small team of crazy, snow sports obsessed individuals... Also known as The White's family. They saw an opportunity
-                             and believed they could start up a unique snowboard shop withing their garage. Nearly 80 year's later, Uncle Jib's has been ggoing from strength 
-                             to strength and has just recently moved its headquaters to North Yorkshire, UK. 
-                        </p>
-                        <p>
-                            We know that there isn't much snow within the UK, but that doesnt mean there are no snowboards. 
-                        </p>
-                    </div>
-                </div>
+        <img style="width: 100%" src="{% static 'images/mountian.jpg' %}" alt="snowboarding">
+    </div>
+</div>
+
+<div class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-10 mx-auto my-2 text-center">
+                <h1 class="text-capitalize font-weight-bold">
+                    Welcome to Uncle Jib's
+                </h1>
+                <h3>#EnjoyTheRide</h3>
+                <br>
+                <p>
+                    Here at Uncle Jib's, we started out in 1953 by a small team of crazy, snow sports obsessed individuals... Also known as The White's family. 
+                </p> 
+                <p>
+                    They saw an opportunity and believed they could start up a unique snowboard shop withing their garage. Nearly 80 year's later, Uncle Jib's has been going from strength 
+                    to strength and has just recently moved its headquaters to North Yorkshire, UK. 
+                </p>
+                <p>
+                    We know that there isn't much snow within the UK, but that doesnt mean there are no snowboards. 
+                </p>
             </div>
-
-            <hr>
-
-            <!--Shopping section   /Bootstrap-->
-
-            <div class="row row-cols-1 row-cols-md-2">
-                <div class="row row-cols-1 row-cols-md-2">
-                    <div class="col mb-4">
-                        <div class="card">
-                            <img src="../images/pipe.jpg" class="card-img-top" alt="Park and Pipe Snowboards">
-                                <div class="card-body">
-                                    <h5 class="card-title">Park and Pipe</h5>
-                                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <button type="button" class="btn btn-primary">View Park/Pipe Boards</button>
-                                </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row row-cols-1 row-cols-md-2">
-                    <div class="col mb-4">
-                        <div class="card">
-                            <img src="../images/jib.jpg" class="card-img-top" alt="Street and Jib Snowboards">
-                               <div class="card-body">
-                                   <h5 class="card-title">Street and Jib</h5>
-                                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <button type="button" class="btn btn-primary">View Street/Jib Boards</button>
-                                </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col mb-4">
-                    <div class="card">
-                        <img src="../images/all-mountain.jpg" class="card-img-top" alt="All Mountain Snowboards">
-                            <div class="card-body">
-                                <h5 class="card-title">All Mountain</h5>
-                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <button type="button" class="btn btn-primary">View All Mountain Boards</button>
-                            </div>
-                    </div>
-                </div>
-                <div class="row row-cols-1 row-cols-md-2">
-                    <div class="col mb-4">
-                        <div class="card">
-                            <img src="../images/big.jpg" class="card-img-top" alt="Big Mountain Snowboards">
-                                <div class="card-body">
-                                    <h5 class="card-title">Big Mountain</h5>
-                                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                        <button type="button" class="btn btn-primary">View Big Mountain Boards</button>
-                                </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row row-cols-1 row-cols-md-2">
-                    <div class="col mb-4">
-                        <div class="card">
-                            <img src="../images/boarder.jpg" class="card-img-top" alt="BoarderCross Snowboards">
-                               <div class="card-body">
-                                   <h5 class="card-title">BoarderCross</h5>
-                                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                        <button type="button" class="btn btn-primary">View BoarderCross Boards</button>
-                                </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row row-cols-1 row-cols-md-2">
-                    <div class="col mb-4">
-                        <div class="card">
-                            <img src="../images/free.jpg" class="card-img-top" alt="Freestyle Snowboards">
-                                <div class="card-body">
-                                    <h5 class="card-title">Freestyle</h5>
-                                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <button type="button" class="btn btn-primary">View Freestyle Boards</button>
-                                </div>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-
-            <!--Icons for shipping/returns/customer service-->
-
-            <div class="icon-box-row">
-                <div class="icon-box">
-                    <i class="fas fa-globe-americas"></i>
-                        <p>Worldwide Shipping</p>
-                </div>
-                <div class="icon-box">
-                    <i class="fas fa-truck"></i>
-                        <p>Free Delivery on orders over £150</p>
-                </div>
-                <div class="icon-box">
-                    <i class="fas fa-envelope-open-text"></i>
-                        <p>24hr Customer Service</p>
-                </div>
-            </div>
-
-        <!-- End the container divs-->
-
         </div>
     </div>
 </div>
 
 
-<!--JS for the carosel gallery -->
-<script>
-var slideIndex = 0;
-showSlides();
 
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 5000); // Change image every 5 seconds
-}
-</script>
 
 {% endblock %}
-
