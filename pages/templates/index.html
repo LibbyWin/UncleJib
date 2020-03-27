@@ -30,8 +30,35 @@
                 <p>
                     We know that there isn't much snow within the UK, but that doesnt mean there are no snowboards. 
                 </p>
+                <hr>
+                <br>
+                <h2 class="text-capitalize font-weight-bold">
+                    Select Snowboard Category
+                </h2>
             </div>
         </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+    {% for i in '12345678' %}
+        <div class="col-10 mx-auto col-md-8 col-lg-4">
+            <div class="card-md-5" style="boarder-color: transparent;">
+            
+                <img src="{% static 'images/big.jpg' %}" class="carf-img-top">
+            
+                <div class="card-footer d-flex justify-content-between" style="background: transparent; boarder-color: transparent; padding: 20px;">
+                    <p class="font-weight-bold mb-0">
+                        Big Mountian Snowboard
+                    </p>
+                    <h5 class="text-info font-italic mb-0">
+                        <span class="mr-1">£</span> 450
+                    </h5>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
     </div>
 </div>
 

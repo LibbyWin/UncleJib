@@ -2,3 +2,22 @@ body {
     background-color: #dadada;
 }
 
+/*----------------------------------product.html page*/
+.product-title{
+   font-size: 30px;
+   text-transform: uppercase;
+   letter-spacing: .1em;
+   padding-top: 15px;
+   padding-bottom: 10px;
+}
+
+.product-text {
+    padding-right: 20px;
+}
+
+.product-description {
+   font-size: 15px;
+   text-transform: uppercase;
+   letter-spacing: .1em;
+}
+
