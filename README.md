@@ -149,6 +149,13 @@ and stylist snowbaords to suit their riding needs.
 
 ## Testing
 
+The code below will delete the migrations due to an occuring error which occured multiple
+ times. In order to migrate my files, I had to delete migrations and remigrate them 
+ to the products model.py.
+`find . -path "*/migrations/*.py" -not -name "__init__.py" -delete`
+`find . -path "*/migrations/*.pyc"  -delete `  
+`python manage.py migrate UncleJibs zero`
+
 In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, 
 in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing 
 an easy and straightforward way for the users to achieve their goals.

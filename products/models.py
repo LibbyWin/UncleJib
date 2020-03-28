@@ -7,12 +7,18 @@ class Category(models.Model):
     category_image = models.ImageField(upload_to='category', blank=True)
     category_slug = models.CharField(max_length=200, default='')
 
+    class Meta:
+        ordering = ('snowboard_category',)
+        verbose_name = 'category'
+        verbose_name_plural = 'categories'
+
     def __str__(self):
         return self.snowboard_category
 
 class Product(models.Model):
     """ adding multiple images """
     title = models.CharField(max_length=250, default='')
+    slug = models.SlugField(max_length=200, unique=True)
     category = models.ForeignKey(Category, default=1, on_delete=models.CASCADE)
     image_01 = models.ImageField(upload_to='images', blank=True)
     price = models.DecimalField(max_digits=6, decimal_places=2)
@@ -28,6 +34,11 @@ class Product(models.Model):
     condition = models.CharField(max_length=100, default='')
     stock = models.IntegerField(blank=True)
     available = models.BooleanField(default=True)
+ 
+    class Meta:
+        ordering = ('title',)
+        verbose_name = 'product'
+        verbose_name_plural = 'products'
    
     def __str__(self):
         return self.title
