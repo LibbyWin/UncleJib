@@ -1,7 +1,6 @@
 {% extends "base.html" %}
 {% load bootstrap_tags %}
 {% block content %}
-<!--login form-->
     <form method="post" action="{% url 'login' %}?next={{ next }}" class="accountform">
         <fieldset class="form-group">
             <legend>Login</legend>
