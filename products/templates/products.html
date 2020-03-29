@@ -5,152 +5,38 @@
 
 {% block content %}
 
-<div class="container py-5">
+<div class="contain py-5">
     <div class="row mt-5">
         <div class="col-10 mx-auto col-md-6 my-3">
-            <img src="{% static 'images/free.jpg' %}" alt="Freestyle Snowboard">
+            <img src="{{ product.image_01 }}" alt="{{ product.title}}">
+        </div>
+        <div class="col-10 mx-auto col-md-6 my-3">
+            <div>
+            <h1 class="product_title">{{product.title}}</h1>
+            <h5 class="text-info font-italic mb-3">
+                <span class="mr-1">£</span>{{ product.price}}
+            </h5>
+            {% if product.stock <= 0 %}
+                <p class="text-justify product_text"><b>Out of Stock</b></p>
+            {% else %}
+            <a href="">Add to Cart</a>
+                <p class="product_description">Product Description</p>
+                <p class="test-justify product_text">{{ product.description }}</p>
+                <p class="test-justify product_text"><strong>Size:  </strong>{{ product.size }} cm</p>
+                <p class="test-justify product_text"><strong>Colour:  </strong>{{ product.colour }}</p>
+                <p class="test-justify product_text"><strong>Gender:  </strong>{{ product.gender }}</p>
+                <p class="test-justify product_text"><strong>Year:  </strong>{{ product.year }}</p>
+                <p class="test-justify product_text"><strong>Flex:  </strong>{{ product.flex }}</p>
+                <p class="test-justify product_text"><strong>Shape:  </strong>{{ product.shape}}</p>
+                <p class="test-justify product_text"><strong>Rider Profile:  </strong>{{ product.rider_profile }}</p>
+                <p class="test-justify product_text"><strong>Board Profile:  </strong>{{ product.board_profile }}</p>
+                <p class="test-justify product_text"><strong>Condition:  </strong>{{ product.condition }}</p>
+            </div>
         </div>
     </div>
-    <div class="col-10 mx-auto col-md-6 my-3">
-        <div>
-            <h1 class="product-title">{{ product.title }}</h1>
-                <h5 class="text-info font-italic mb-3">
-                    <span class="mr-1">£</span> {{ product.price }}
-                </h5>
-            <p class="product-description">Product Description</p>
-            <p class="text-justify product_text">
-                {{ product.description }}
-            </p>
-
-        </div>
-    </div>
-
 </div>
 
 
+{% endblock %}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--
-<div class="container">
-    <div class="row row-flex">
-        <!--heading
-        <div class="col-12">
-            <h1>{{ product.title }}</h1>
-        </div>
-        <div class="col-12 col-lg-9">
-            <div class="row">
-                <!--MainImage
-                <div class="col-12 col-lg-9">
-                    <div class="main-pic" style="background-image: url ('{{ MEDIA_URL }}{{ product.image_01.url }}')'">
-                </div>
-
-                <!--other lttle images
-                <div class="col-12 col-lg-3">
-
-                    {% if product.product_image_02 %}
-                    <div class="little-images" style="background-image: url ('{{ MEDIA_URL }}{{ product.image_02 }}')">
-                    </div>
-                    {% endif %}
-
-                    {% if product.product_image_03 %}
-                    <div class="little-images" style="background-image: url ('{{ MEDIA_URL }}{{ product.image_03 }}')">
-                    </div>
-                    {% endif %}
-                </div>
-            </div>
-        </div>
-
-        {% for product in products %}
-        <div class="col-12 col-lg-9">
-            <div class="panel-body">
-                <div class="product" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')"></div>
-
-                <h3>{{ product.title }}</h3>
-                <br>
-                <p>{{ product.price }}</p>
-
-                <form method="post" action="{% url 'add_to_cart' product.id %}">
-                    {% csrf_token %}
-                    <div class="input-group">
-                        <input name="quantity" type="number" min="1" max="999" class="form-control" placeholder="Quantity">
-                        <span class="input-group-btn">
-                            <button type="button" class="btn btn-primary">Add To Cart</button>
-                        </span>
-                    </div>
-                </form>
-            </div>
-        </div>
-
-        <!--product description
-        <div class="col-12">
-            <div class="product-description">
-                <h4 class="description-header">
-                    Description
-                </h4>
-                <br>
-                <p class="indi-product-description">{{ product.description }}
-                </p>
-
-                <!--create a thematic break in the page
-                <hr>
-
-                <!-- Details for all products ncluding height and material
-                <h4 class="description-header">
-                    Information
-                </h4>
-                <br>
-                <p class="indi-product-description">
-                    <strong>Size:  </strong>{{ product.size }} cm
-                </p>
-                <hr>
-                <p class="indi-product-description">
-                   <strong>Colour:  </strong>{{ product.colour }}
-                </p>
-                   <hr>
-                <p class="indi-product-description">
-                    <strong>Gender:  </strong>{{ product.gender }}
-                </p>
-                <hr>
-                <p class="indi-product-description">
-                    <strong>Year:  </strong>{{ product.year }}
-                </p>
-                <hr>
-                <p class="indi-product-description">
-                    <strong>Flex:  </strong>{{ product.flex }}
-                </p>
-                <hr>
-                <p class="indi-product-description">
-                    <strong>Shape:  </strong>{{ product.shape}}
-                </p>
-                <hr>
-                <p class="indi-product-description">
-                    <strong>Rider Profile:  </strong>{{ product.rider_profile }}
-                 </p>
-                <hr>
-                <p class="indi-product-description">
-                    <strong>Board Profile:  </strong>{{ product.board_profile }}
-                </p>
-                <hr>
-                <p class="indi-product-description">
-                    <strong>Condition:  </strong>{{ product.condition }}
-                </p>
-            </div>
-        </div>
-    </div>
-    {% endfor %}
-</div>
-{% endblock %}-->
+  

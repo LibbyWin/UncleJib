@@ -6,6 +6,7 @@ urlpatterns = [
     url(r'^contact/$', contact, name='contact'),
     url(r'delivery/$', delivery, name='delivery'),
     url(r'returns/$', returns, name='returns'),
-    url(r'about/$', about, name='about'),
-    url(r'index/$', index, name='index'),    
+    url(r'about/$', about, name='about'), 
+    url(r'index/$', index, name='index'),   
+    url(r'<slug:category_slug>/$', index, name='products_by_category'),
 ]
