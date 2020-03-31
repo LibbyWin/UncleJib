@@ -28,39 +28,90 @@
                 <h2 class="text-capitalize font-weight-bold">
                     Select Your Ideal Snowboard!
                 </h2>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="container">
-    <div class="row">
-    {% for i in '123456' %}
-        <div class="col-10 mx-auto col-md-8 col-lg-4">
-            <div class="card-md-5" style="boarder-color: transparent;">
-            
-                <img src="{% static 'images/big.jpg' %}" class="{{ product.title }}">
-            
-                <div class="card-footer d-flex justify-content-between" style="background: transparent; boarder-color: transparent; padding: 20px;">
-                    <p class="font-weight-bold mb-0">
-                         product.title
-                    </p>
-                    <p class="font-weight-light mb-0">
-                         product.category 
-                    </p>
-                </div>
-                <div class="card-footer d-flex justify-content-between" style="background: transparent; boarder-color: transparent; padding: 20px;">
-                    <h5 class="text-info font-italic mb-0">
-                        <span class="mr-1">£</span>  product.price 
-                    </h5>
-                </div>
+                <br>
                 <hr>
             </div>
         </div>
-    {% endfor %}
     </div>
 </div>
 
+
+<div class="container">
+    <div class="row">
+    <div class="col-sm-4">
+        <div class="text-center">
+            <h3><i class="far fa-snowflake"></i>  All Mountain</h3>
+                <div class="text-center">
+                    <p>You want to ride the whole mountain in style, switching from piste to park to powder with ease. 
+    Air off a few kickers, occasionally riding switch and at speed whenever you can. If this describes you, this page lists 
+    only those snowboards meeting this all mountain requirement. </p>
+                    <a href="{% url 'all_mountain' %}" class="btn btn-info">View Boards</a>
+                </div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="text-center">
+            <h3><i class="far fa-snowflake"></i>  Big Mountain</h3>
+                <div class="text-center">
+                    <p>Big Mountain, powder & backcountry snowboards - for the powder hound! You live for riding off-piste 
+                    in the deep soft white stuff. Think about the type of rider you are and how you will be using your 
+                    snowboard. If you are not sure - the 'All Mountain' option is the one to go for.</p>
+                    <a href="{% url 'big_mountain' %}" class="btn btn-info">View Boards</a>
+                </div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="text-center">
+            <h3><i class="far fa-snowflake"></i>  Freestyle</h3>
+                <div class="text-center">
+                    <p>Freeride snowboards are for cruising the pistes and powder, covering the entire resort as quickly as you can. 
+                        Cutting sharp edges into the piste, then blasting off into the powder at every opportunity, dropping cliffs if you dare but speed rather 
+                        than air is your thing.</p>
+                    <a href="{% url 'freestyle' %}" class="btn btn-info">View Boards</a>
+                </div>
+        </div>
+    </div>
+    </div>
+
+<br>
+
+<br>
+
+    <div class="row">
+    <div class="col-sm-4">
+        <div class="text-center">
+            <h3><i class="far fa-snowflake"></i>  Pipe and Pipe</h3>
+                <div class="text-center">
+                    <p>If you are choosing a board for use in the snow park or half pipe, spins, grabs and kickers are your thing.
+                        You'd rather spin 5 than carve hard turns into the piste! You need a specialised snowboard for this kind of riding. 
+                        The snowboard park is the pace for big kickers and giant air!</p>
+                    <a href="{% url 'pipe/park' %}" class="btn btn-info">View Boards</a>
+                </div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="text-center">
+            <h3><i class="far fa-snowflake"></i>  Jib and Street</h3>
+                <div class="text-center">
+                    <p>If you ride a jib or street style snowboard, rails and man made obstacles are your playground. 
+                        You need a short, flexible, twin tip board with soft edges for sliding, jibbing and hitting boxes. Think about the type of rider 
+                        you are and how you will be using your snowboard.</p>
+                    <a href="{% url 'jib/street' %}" class="btn btn-info">View Boards</a>
+                </div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="text-center">
+            <h3><i class="far fa-snowflake"></i>  Boardercross</h3>
+                <div class="text-center">
+                    <p>Boardercross snowboards are specialist snowboards designed for racing over the rough and tumble of a boarder cross course. 
+                        Boardercross snowboards can handle any terrain and can therefore be ridden all mountain but they are not for all riders!</p>
+                    <a href="{% url 'boardercross' %}" class="btn btn-info">View Boards</a>
+                </div>
+        </div>
+    </div>
+    </div>
+</div>
 
 
 {% endblock %}
