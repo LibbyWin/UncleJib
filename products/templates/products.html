@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block title %} Product{% endblock %}
+{% block title %} Product {% endblock %}
 
 {% block content %}
 
@@ -24,19 +24,42 @@
                 <p class="test-justify product_text">{{ product.description }}</p>
                 <p class="test-justify product_text"><strong>Size:  </strong>{{ product.size }} cm</p>
                 <p class="test-justify product_text"><strong>Colour:  </strong>{{ product.colour }}</p>
-                <p class="test-justify product_text"><strong>Gender:  </strong>{{ product.gender }}</p>
-                <p class="test-justify product_text"><strong>Year:  </strong>{{ product.year }}</p>
                 <p class="test-justify product_text"><strong>Flex:  </strong>{{ product.flex }}</p>
                 <p class="test-justify product_text"><strong>Shape:  </strong>{{ product.shape}}</p>
-                <p class="test-justify product_text"><strong>Rider Profile:  </strong>{{ product.rider_profile }}</p>
                 <p class="test-justify product_text"><strong>Board Profile:  </strong>{{ product.board_profile }}</p>
-                <p class="test-justify product_text"><strong>Condition:  </strong>{{ product.condition }}</p>
             </div>
         </div>
+        {% endif %}
     </div>
 </div>
 
 
 {% endblock %}
 
-  
+    
+{% extends 'base.html' %}
+
+{% block title %}
+Categories
+{% endblock %}
+
+{% block content %}
+<!-- category defined search -->
+<div class="row row-flex">
+         {% for product in products %}
+            <div class="col s12 m6 l6">
+                
+                    <div class="card hoverable">
+                        <div class="card-content">
+                            <div class="card-image">{{ product.image-01 }}</div>
+                            <div class="card-title">{{ product.name }}</div>
+                            
+                            <p>{{product.price}}</p>
+                            <a class="btn btn-primary" href="#" role="button">Link</a>
+                        </div>
+                    </div>
+                
+            </div>
+        {% endfor %}
+</div>
+{% endblock %}
