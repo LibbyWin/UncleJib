@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Category, Product
+from .models import Product
 
 # Create your views here.
 def all_products(request):
@@ -7,5 +7,5 @@ def all_products(request):
     return render(request, "products.html", {"products": products})
 
 def all_categories(request):
-    categories = Category.objects.all
-    return render(request, "categories.html", {"categories": categories})
+    product_list = Product.objects.filter(choice=current_url).order_by('name')
+    return render(request, "categories.html", {'products': products})

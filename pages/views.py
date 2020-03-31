@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404
-from products.models import Category, Product
+from products.models import Product
 
 
 # Create your views here.
@@ -29,7 +29,7 @@ def index(request, category_slug=None):
     category_page = None
     products = None
     if category_slug !=None:
-        category_page = get_object_or_404(Category, slug=category_slug)
+        category_page = get_object_or_404(slug=category_slug)
         products = Product.object.filter(category=category_page, available=True)
     else:
         products = Product.objects.all().filter(available=True)

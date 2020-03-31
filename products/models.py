@@ -1,21 +1,17 @@
 from django.db import models
 
 # Create your models here.
-class Category(models.Model):
-    snowboard_category = models.CharField(max_length=250, unique=True)
-    category_description = models.TextField(blank=True)
-    category_image = models.ImageField(upload_to='category', blank=True)
-    category_slug = models.CharField(max_length=200, default='')
-
-    class Meta:
-        ordering = ('snowboard_category',)
-        verbose_name = 'category'
-        verbose_name_plural = 'categories'
-
-    def __str__(self):
-        return self.snowboard_category
 
 class Product(models.Model):
+    CHOICE = (
+        ('all_mountain', 'All Mountain'),
+        ('big_mountain', 'Big Mountain'),
+        ('freestyle', 'Freestyle'),
+        ('pipe_park', 'Pipe/Park'),
+        ('jib_street', 'Jib/Street'),
+        ('boardercross', 'Boardercross')
+        )
+        
     name = models.CharField(max_length=250, default='')
     slug = models.SlugField(max_length=200, unique=True)
     image_01 = models.ImageField(upload_to='images', blank=True)
@@ -28,8 +24,7 @@ class Product(models.Model):
     board_profile = models.CharField(max_length=100, default='')
     stock = models.IntegerField(blank=True)
     available = models.BooleanField(default=True)
- 
-   
+
     def __str__(self):
         return self.name
 
