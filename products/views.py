@@ -1,5 +1,6 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from .models import Product
+
 
 # Create your views here.
 def all_categories(request):
@@ -7,7 +8,7 @@ def all_categories(request):
     shows all products under a specific category 
     ie. freestyle = feestyle snowboards
     """
-    product_list = Product.objects.filter(choice=current_url).order_by('name')
+    products = Product.objects.filter(choise=current_url).order_by('name')
     return render(request, "categories.html", {'products': products})
 
 def product(request):
@@ -15,7 +16,7 @@ def product(request):
     show an individual product with all its detail
     show on the page
     """
-    product = Review.objects.filter(product=product)    
+    product = get_object_or_404
     return render(request, "product.html", {"product": product})
 
 def all_products(request):

@@ -26,12 +26,4 @@ def returns(request):
 
 def index(request, category_slug=None):
     """A view that renders the index page"""
-    category_page = None
-    products = None
-    if category_slug !=None:
-        category_page = get_object_or_404(slug=category_slug)
-        products = Product.object.filter(category=category_page, available=True)
-    else:
-        products = Product.objects.all().filter(available=True)
-    
-    return render(request, "index.html", {'categories': category_page, 'products': products})
+    return render(request, "index.html")
