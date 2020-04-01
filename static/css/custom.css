@@ -43,3 +43,29 @@ color: #2fb8ce;
     color: #ffffff;
 
 }
+
+
+
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.contact-heading {
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.center-form {
+    padding-top: 10px;
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+button[type="submit"] {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    background-color: #e84610;
+    color: #fafafa;
+}

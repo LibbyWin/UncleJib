@@ -11,7 +11,7 @@ class Product(models.Model):
         ('pipe_park', 'Pipe/Park'),
         ('jib_street', 'Jib/Street'),
         ('boardercross', 'Boardercross')
-        )
+    )
         
     name = models.CharField(max_length=250, default='')
     slug = models.SlugField(max_length=200, unique=True)
