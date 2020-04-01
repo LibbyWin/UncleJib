@@ -9,4 +9,5 @@ urlpatterns = [
     url(r'^pipe_park$', product, name='pipe_park'),
     url(r'^jib_street$', product, name='jib_street'),
     url(r'^boardercross$', product, name='boardercross'),
+    url(r'^(?P<slug>[\w-]+)$', product, name='product_detail'),
 ]

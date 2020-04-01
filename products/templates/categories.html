@@ -7,17 +7,16 @@ Categories
 {% block content %}
 <!-- category defined search -->
 <div class="row row-flex">
-         {% for products in products %}
+         {% for product in products %}
             <div class="col s12 m6 l6">
                     <div class="card hoverable">
                         <div class="card-content">
                             <div class="card-image"> {{ product.image_01 }}</div>
-                            <div class="card-title">{{ product.name }}</div>
+                            <div class="card-title"><a href="{% url 'product' product.slug %}">{{ product.name }}</a> </div>
                             <p>{{product.price}}</p>
                             <a class="btn btn-primary" href="{% url 'product' %}" role="button">Detials</a>
                         </div>
                     </div>
-                
             </div>
         {% endfor %}
 </div>

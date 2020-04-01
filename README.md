@@ -85,19 +85,14 @@ and stylist snowbaords to suit their riding needs.
  | --- | --- | --- | --- |
  | Title | title | max_length=250 | CharField |
  | Image 1 | image_01 | blank=True | ImageField |
- | Image 2 | image_02 | blank=True, null=True | ImageField |
- | Image 3 | image_03 | blank=True, null=True | ImageField |
  | Price | price | max_digits=6 | DecimalField |
  | Descriptions | description |  | TestField |
  | Size | size | max_length=100 | CharField |
  | Colour | colour | max_length=100 | CharField |
- | Gender | gender | max_length=100 | CharField |
- | Year | year | max_length=100 | CharField |
  | Flex | flex | max_length=100 | CharField |
  | Shape | shape | max_length=100 | CharField |
- | Rider Profile | rider_profile | max_length=100 | CharField |
  | Board Profile | board_profile | max_length=100 | CharField |
- | Condition | condition | max_length=100 | CharField |
+
 
 
 
@@ -132,7 +127,7 @@ and stylist snowbaords to suit their riding needs.
 - **Pillow** as a python library for processing images.
 - **Git** as version control.
 - **Github** to allow storing and sharing the project remotely.
-- **Whitenoise** allows the web app to have tis one static files.
+- **Whitenoise** allows the web app to have its own static files.
 - **Boto3** to enable management and 
 - **Sqlite3** for a development database.
 - **Bootstrap** to provide simple structure to th website and making it mobile responsive.

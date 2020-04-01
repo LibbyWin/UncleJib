@@ -63,42 +63,59 @@
 
     <!--FOOTER-->
     <footer class="bg-dark text-white mt-5 p-5">
-        <div class="col-sm">
-            <h5 class="widget-title">Categories<span></span></h5>
-                <ul class="thumbnail-widget">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                     <h5>Categories </h5>
+                        <ul>
                     <li>
-                        <div class="thumb-content"><a href="#.">Park/Pipe Boards</a></div>	
+                        <div class="thumb-content"><a href="{% url 'pipe_park'%}.">Park/Pipe Boards</a></div>	
                     </li>
                     <li>
-                        <div class="thumb-content"><a href="#.">Jib/Street Boards</a></div>	
+                        <div class="thumb-content"><a href="{% url 'jib_street' %}">Jib/Street Boards</a></div>	
                     </li>
                     <li>
-                        <div class="thumb-content"><a href="#.">FreeRider Boards</a></div>	
+                        <div class="thumb-content"><a href="{% url 'freerider' %">FreeRider Boards</a></div>	
                     </li>
                     <li>
-                        <div class="thumb-content"><a href="#.">All Mountain Boards</a></div>	
+                        <div class="thumb-content"><a href="{% url 'all_mountain' %}">All Mountain Boards</a></div>	
                     </li>
                     <li>
-                        <div class="thumb-content"><a href="#.">Boardercross Boards</a></div>	
+                        <div class="thumb-content"><a href="{% url 'boardercross' %}">Boardercross Boards</a></div>	
                     </li>
                     <li>
-                        <div class="thumb-content"><a href="#.">Big Mountain Boards</a></div>	
+                        <div class="thumb-content"><a href="{% url 'big_mountain' %}">Big Mountain Boards</a></div>	
                     </li>
                 </ul>
+                </div>
+                <div class="col-sm">
+                    <h5>Links</h5>
+                                            <ul>
+                    <li>
+                        <div class="thumb-content"><a href="{% url 'about' %}">About</a></div>	
+                    </li>
+                    <li>
+                        <div class="thumb-content"><a href="{% url 'contact' %}">Contact</a></div>	
+                    </li>
+                    <li>
+                        <div class="thumb-content"><a href="{% url 'delivery' %}">Delivery</a></div>	
+                    </li>
+                    <li>
+                        <div class="thumb-content"><a href="{% url 'faqs' %}">FAQs</a></div>	
+                    </li>
+                    <li>
+                        <div class="thumb-content"><a href="{% url 'returns' %}">Returns</a></div>	
+                    </li>
+                </ul>
+                </div>
+                <div calss="col-sm">
+                    <h5>Social Links</h5>
+                    <div><i class="fab fa-snapchat-square fa-3x"></i></div>
+                    <div><i class="fab fa-facebook-square fa-3x"></i></div>
+                    <div><i class="fab fa-instagram-square fa-3x"></i></div>
+                </div>
+            </div>
         </div>
-            
-
-        <div class="col-sm">
-            
-                <h5 class="widget-title">Social Links<span></span></h5>
-                    <ul class="social-footer2">
-                        <li class=""><a href="https://www.facebook.com/" target="_blank" title="Facebook"><img alt="Facebook" width="30" height="30"></a><i class="fab fa-facebook-square"></i></li>
-                        <li class=""><a href="https://www.snapchat.com" target="_blank" title="Twitter"><img alt="Snapchat" width="30" height="30"></a><i class="fab fa-snapchat-square"></i></li>
-                        <li class=""><a href="https://www.instagram.com/" target="_blank" title="instagram"><img alt="instagram" width="30" height="30"></a><i class="fab fa-instagram-square"></i></li>
-                    </ul>
-            
-        </div>
-
         <div class="container">
             <p class="lead text-center">
                 Copyright &copy; 2020 Uncle Jib's
