@@ -51,6 +51,16 @@
                         <li class="nav-item"><a class="nav-link text-light text-uppercase font-weight-bold px-3" href="{% url 'about' %}">About</a></li>
                     </ul>
 
+                    <ul class="nav navbar-nav navbar-right">
+                    {% if user.is_authenticated %}
+                        <li class="nav-item"><a class="nav-link text-light text-uppercase font-weight-bold px-3" href="{% url 'profile' %}">Profile</a></li>
+                        <li class="nav-item"><a class="nav-link text-light text-uppercase font-weight-bold px-3" href="{% url 'logout' %}">Log Out</a></li>
+                    {%  else %}
+                        <li class="nav-item"><a class="nav-link text-light text-uppercase font-weight-bold px-3" href="{% url 'register' %}">Register</a></li>
+                        <li class="nav-item"><a class="nav-link text-light text-uppercase font-weight-bold px-3" href="{% url 'login' %}">Log In</a></li>
+                    {% endif %}
+                    </ul>
+
                     <form class="form-inline ml-3">
                         <div class="input-group">
                             <input type="text" class="form-control" placeholder="Search">
