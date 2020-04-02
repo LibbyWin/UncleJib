@@ -8,7 +8,6 @@ We are all about the experience here at Uncle Jib's and want to bring you the ve
 all enjoy browsing and hope to see you again soon.
 
 
-
 ## why was this site created?
 Uncle Jib's webshope has been designed and built by Libby Winfield as a final project for the Code Institute Full Stack Web Development 
 Diploma. The purpose of this shopping site is to allow for new customers to shop on a safe and secure site in order to shop for the latests
@@ -73,22 +72,22 @@ The wireframes can be found within the 'static' file under the name 'wireframes'
 
 ## Pages
 
-- home page
-- products 
-- cart 
-- categories
-- search
-- about
-- delivery
-- returns
-- contact
+- Home Page
+- Products 
+- Cart 
+- Categories
+- Search
+- About
+- Delivery
+- Returns
+- Contact
 - FAQs
-- register
-- login
-- logout
-- accounts
-- checkout
-- terms and conditions
+- Register
+- Login
+- Logout
+- Accounts
+- Checkout
+
 
 ## furture features
 There are many future features I would like to implement in the future to allow for a better user experience.
@@ -224,6 +223,7 @@ In addition, if it is not obvious, you should also describe how to run your code
 ### Content
 - The descriptions and images for the snowboard, descriptions and categories were all taken from www.absolute-snow.co.uk.
 This site sells everything to do with the outdoors from hiking, wakeboarding and snowboarding. 
+- Big thanks to W3Schools for alling me to understande certain concepts and use small snippets of their code to push the limits of this site.
 - Big thanks to Scott Kipp for allowing me to take information form your previous MS4 and providing me with inspiration for the categories 
 to products to product design for the site.
 
