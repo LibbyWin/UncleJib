@@ -19,8 +19,11 @@
             {% if product.stock <= 0 %}
                 <p class="text-justify product_text"><b>Out of Stock</b></p>
             {% else %}
-            <a href="">Add to Cart</a>
-                <p class="product_description">Product Description</p>
+            
+            <a class="btn btn-primary" role="button" href="">Add to Cart</a>
+            <br>
+            <br>
+                <h5>Product Description</h5>
                 <p class="test-justify product_text">{{ product.description }}</p>
                 <p class="test-justify product_text"><strong>Size:  </strong>{{ product.size }} cm</p>
                 <p class="test-justify product_text"><strong>Colour:  </strong>{{ product.colour }}</p>

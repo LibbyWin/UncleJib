@@ -5,19 +5,22 @@ Categories
 {% endblock %}
 
 {% block content %}
-<!-- category defined search -->
-<div class="row row-flex">
-         {% for product in products %}
-            <div class="col s12 m6 l6">
-                    <div class="card hoverable">
-                        <div class="card-content">
-                            <div class="card-image"> {{ product.image_01 }}</div>
-                            <div class="card-title"><a href="">{{ product.name }}</a> </div>
-                            <p>{{product.price}}</p>
-                            <a class="btn btn-primary" href="{% url 'product_detail' product_id=product.id %}" role="button">Detials</a>
-                        </div>
-                    </div>
+<div class="contain">
+{% for product in products %}
+    <div class="row">
+    
+        <div class="col-sm">
+            <div class="text-center">
+                <div class="card-image"> {{ product.image_01 }}</div>
             </div>
-        {% endfor %}
+            <div class="text-center">
+                <a href="">{{ product.name }}</a>
+                <p>£  {{product.price}}</p>
+                <a class="btn btn-primary" href="{% url 'product_detail' product_id=product.id %}" role="button">Detials</a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
 </div>
+
 {% endblock %}

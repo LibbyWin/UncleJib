@@ -39,8 +39,6 @@ board from there.
 
 ## DESIGN CHOICE
 
-- FONTS
-
 ### Icons
 - There are many icons throughout the entire site to easily show what specific items represent. 
 - - Within the footer section of the page there are two icons, Snapchat and Facebook. These two social media links lead the users 
@@ -142,7 +140,8 @@ Found within the `checkout app`, shows how the form will appear on the site.
 | Date | date |  default=datetime.date.today | DateField  |
 
 
-## ORDERLINEITEM
+## Order line Checkout Model
+Found within the `checkout app`, will show how the form is filled out on the site.
 
 | Title | Key in DB | Validation | Field Type |
 |---|---|---|---|
@@ -185,6 +184,7 @@ The code below will delete the migrations due to an occuring error which occured
 `python3 manage.py runserver --run-sync` 
  - These few lines of code allowed for me to delete and reimport any migrations I needed to my project. However countless times I had to manually 
  delete the migrations folders, __pycache__, db.sqlite3 files to ensure that there was a hard reboot and reinstallation of `makemigrations` and `migrate`.
+ After finding out this issue, I had to understand how you can allow a translator to translate part of the URL. 
 
 - Some testing was done within the products app to ensure that my spelling for 'products' and 'product' were caught. 
 
