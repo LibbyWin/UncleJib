@@ -3,7 +3,7 @@ from .models import Product
 
 
 # Create your views here.
-def all_categories(request):
+def all_categories(request,):
     """
     shows all products under a specific category 
     ie. freestyle = feestyle snowboards
@@ -26,4 +26,8 @@ def all_products(request):
     sites url
     """
     products = Product.objects.all()
+    return render(request, "categories.html", {"products": products})
+
+def category(request, cat):
+    products = Product.objects.filter(choice=cat)
     return render(request, "categories.html", {"products": products})

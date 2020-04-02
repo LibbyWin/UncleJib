@@ -25,6 +25,11 @@ class Product(models.Model):
     board_profile = models.CharField(max_length=100, default='')
     stock = models.IntegerField(blank=True)
     available = models.BooleanField(default=True)
+    choice = models.CharField(
+        max_length=50,
+        choices=CHOICE,
+        default='All Mountain',
+    )
 
     def __str__(self):
         return self.name

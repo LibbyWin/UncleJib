@@ -29,7 +29,7 @@
   </head>
   <body>
     <!--NAV BAR-->
-    <nav class="navbar navbar-expand-md navbar-light bg-dark">
+    <nav class="navbar navbar-expand-md navbar-light bg-dark sticky-top">
         <a href="{% url 'index' %}" class="navbar-brand"><i class="fas fa-snowboarding text-primary fa-2x"></i></a>
             <button type="button" class="navbar-toggler bg-light" data-toggle="collapse" data-target="#nav" name="button"><span class="navbar-toggler-icon"></span></button>
 
@@ -38,12 +38,12 @@
                         <li class="nav-item dropdown"><a class="nav-link text-light text-uppercase font-weight-bold px-3 dropdown-toggle" 
                             href="" data-toggle="dropdown">Snowboards</a>
                                 <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="{% url 'all_mountain' %}">All Mountain Boards</a>
-                                    <a class="dropdown-item" href="{% url 'big_mountain' %}">Big Mountain Boards</a>
-                                    <a class="dropdown-item" href="{% url 'freestyle' %}">Freestyle Boards</a>
-                                    <a class="dropdown-item" href="{% url 'pipe_park' %}">Park/Pipe Boards</a>
-                                    <a class="dropdown-item" href="{% url 'jib_street' %}">Jib/Street Boards</a>
-                                    <a class="dropdown-item" href="{% url 'boardercross' %}">BoarderCross Boards</a>
+                                    <a class="dropdown-item" href="{% url 'category' 'all_mountain' %}">All Mountain Boards</a>
+                                    <a class="dropdown-item" href="{% url 'category' 'big_mountain' %}">Big Mountain Boards</a>
+                                    <a class="dropdown-item" href="{% url 'category' 'freestyle' %}">Freestyle Boards</a>
+                                    <a class="dropdown-item" href="{% url 'category' 'pipe_park' %}">Park/Pipe Boards</a>
+                                    <a class="dropdown-item" href="{% url 'category' 'jib_street' %}">Jib/Street Boards</a>
+                                    <a class="dropdown-item" href="{% url 'category' 'boardercross' %}">BoarderCross Boards</a>
                                     
                                 </div>
                         </li>
@@ -51,7 +51,7 @@
                         <li class="nav-item"><a class="nav-link text-light text-uppercase font-weight-bold px-3" href="{% url 'about' %}">About</a></li>
                     </ul>
 
-                    <ul class="nav navbar-nav navbar-right">
+                    <ul class="nav navbar-nav navbar-left">
                     {% if user.is_authenticated %}
                         <li class="nav-item"><a class="nav-link text-light text-uppercase font-weight-bold px-3" href="{% url 'profile' %}">Profile</a></li>
                         <li class="nav-item"><a class="nav-link text-light text-uppercase font-weight-bold px-3" href="{% url 'logout' %}">Log Out</a></li>
@@ -114,22 +114,22 @@
                      <h5>Categories </h5>
                         <ul>
                     <li>
-                        <div class="thumb-content"><a href="{% url 'pipe_park'%}.">Park/Pipe Boards</a></div>	
+                        <div class="thumb-content"><a href="{% url 'category' 'pipe_park'%}.">Park/Pipe Boards</a></div>	
                     </li>
                     <li>
-                        <div class="thumb-content"><a href="{% url 'jib_street' %}">Jib/Street Boards</a></div>	
+                        <div class="thumb-content"><a href="{% url 'category' 'jib_street' %}">Jib/Street Boards</a></div>	
                     </li>
                     <li>
-                        <div class="thumb-content"><a href="{% url 'freerider' %">FreeRider Boards</a></div>	
+                        <div class="thumb-content"><a href="{% url 'category' 'freerider' %">FreeRider Boards</a></div>	
                     </li>
                     <li>
-                        <div class="thumb-content"><a href="{% url 'all_mountain' %}">All Mountain Boards</a></div>	
+                        <div class="thumb-content"><a href="{% url 'category' 'all_mountain' %}">All Mountain Boards</a></div>	
                     </li>
                     <li>
-                        <div class="thumb-content"><a href="{% url 'boardercross' %}">Boardercross Boards</a></div>	
+                        <div class="thumb-content"><a href="{% url 'category' 'boardercross' %}">Boardercross Boards</a></div>	
                     </li>
                     <li>
-                        <div class="thumb-content"><a href="{% url 'big_mountain' %}">Big Mountain Boards</a></div>	
+                        <div class="thumb-content"><a href="{% url 'category' 'big_mountain' %}">Big Mountain Boards</a></div>	
                     </li>
                 </ul>
                 </div>
