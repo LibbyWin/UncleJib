@@ -3,21 +3,14 @@ from .models import Product
 
 
 # Create your views here.
-def all_categories(request,):
-    """
-    shows all products under a specific category 
-    ie. freestyle = feestyle snowboards
-    """
-    products = Product.objects.filter(choice=current_url).order_by('name')
-    return render(request, "categories.html", {'products': products})
 
-def product(request, slug):
+
+def product(request, product_id):
     """
     show an individual product with all its detail
     show on the page
     """
-    product = get_object_or_404(Product, slug=slug)
-    product.save()
+    product = get_object_or_404(Product, id=product_id)
     return render(request, "product.html", {"product": product})
 
 def all_products(request):
