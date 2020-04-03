@@ -52,14 +52,13 @@
                         </li>
                         <li class="nav-item"><a class="nav-link text-light text-uppercase font-weight-bold px-3" href="{% url 'contact' %}">Contact</a></li>
                         <li class="nav-item"><a class="nav-link text-light text-uppercase font-weight-bold px-3" href="{% url 'about' %}">About</a></li>
-                        <li>
-                        <a href="{% url 'view_cart' %}">
-                            <i class="fa fa-shipping-cart"></i>
+                        <li class="nav-item"><a class="nav-link text-light text-uppercase font-weight-bold px-3" href="{% url 'view_cart' %}">
+                            <i class="fas fa-shopping-cart"></i>
                             {% if product_count > 0 %}
                             <label class="badge badge-warning">{{ product_count }}</label>
                             {% endif %}
                         </a>
-                    </li>
+                        </li>
                     </ul>
 
                     <ul class="nav navbar-nav navbar-left">
