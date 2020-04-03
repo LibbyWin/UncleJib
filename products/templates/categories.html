@@ -11,12 +11,12 @@ Categories
     
         <div class="col-sm">
             <div class="text-center">
-                <div class="card-image"> {{ product.image_01 }}</div>
+                <div class="product" style="background-image: url('{{ MEDIA_URL }}{{ product.image_01 }}')"></div>
             </div>
             <div class="text-center">
                 <a href="">{{ product.name }}</a>
                 <p>£  {{product.price}}</p>
-                <a class="btn btn-primary" href="{% url 'product_detail' product_id=product.id %}" role="button">Detials</a>
+                <a class="btn btn-primary" href="{% url 'product_detail' product.id %}" role="button">Detials</a>
             </div>
         </div>
     </div>
