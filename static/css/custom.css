@@ -30,6 +30,14 @@ color: #2fb8ce;
    letter-spacing: .1em;
 }
 
+.product {
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    width: 400px;
+    height: 400px;
+}
 /*-------------------------------------------- cart.html page ------------------ */
 
 .table_cart {
@@ -47,6 +55,25 @@ color: #2fb8ce;
 
 }
 
+.row.row-flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.panel-default {
+    border-color: transparent;
+    padding: 0 10px;
+}
+
+.panel-body {
+    height: 100%;
+    border: 1px solid #ddd;
+}
+
+.product-description {
+    min-height: 40px;
+}
 
 /* ------------------------------- CONTACT.HTML---------------------------------------------- */
 
