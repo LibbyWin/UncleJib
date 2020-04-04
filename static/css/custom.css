@@ -130,3 +130,11 @@ hr {
     text-decoration: none;
 }
 
+/*Map*/
+
+ div#map {
+   width: 100%;
+   height: 400px;
+   background-color: grey;
+   margin: 0 auto 0 auto;
+ }
