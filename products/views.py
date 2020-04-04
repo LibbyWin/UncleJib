@@ -11,6 +11,8 @@ def product(request, product_id):
     show on the page
     """
     product = get_object_or_404(Product, id=product_id)
+
+    
     return render(request, "product.html", {"product": product})
 
 def all_products(request):

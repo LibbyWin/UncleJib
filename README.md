@@ -188,12 +188,16 @@ The code below will delete the migrations due to an occuring error which occured
 
 - Some testing was done within the products app to ensure that my spelling for 'products' and 'product' were caught. 
 
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, 
-in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing 
-an easy and straightforward way for the users to achieve their goals.
 
-Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and 
-explain how to run them.
+
+- While importing my code within jinja, I came across multiple issues with {{_______}}. My issues came from not opening and closing my jinja correctly 
+and due to not understanding that when redirecting to a view to display information a certain singular database item needs to pass in some way of itentifying 
+that item. This was through giving an ID to the database item. However I went over this multiple times within the course and got extra help to understand where 
+I was going wrong.
+
+
+
+
 
 For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for 
 describing your testing process is via scenarios, such as:
@@ -221,22 +225,30 @@ In particular, you should provide all details of the differences between the dep
 
 In addition, if it is not obvious, you should also describe how to run your code locally.
 
-### Content
-- The descriptions and images for the snowboard, descriptions and categories were all taken from www.absolute-snow.co.uk.
+
+### When commiting to Github, follow theres steps...
+1. Ensure you are on the /environment/ in your ternimal.
+2. If not, use `cd ..` to got back one file at a time till you reach 'environment'.
+3. Enter `git add .` to add all content to github.
+4. `git commit -m "Initial commit` This code will commit your code and add a a small description.
+5. `git push` will upload this file to a remote repository.
+
+## Content
+- The descriptions and images for the snowboard and descriptions were all taken from www.absolute-snow.co.uk.
 This site sells everything to do with the outdoors from hiking, wakeboarding and snowboarding. 
 - Big thanks to W3Schools for alling me to understande certain concepts and use small snippets of their code to push the limits of this site.
 - Big thanks to Scott Kipp for allowing me to take information form your previous MS4 and providing me with inspiration for the categories 
 to products to product design for the site.
 - The accounts app was taken from a previous project that we were taught and had been incorporated into this project, 
-to allow me to spend more time on more inportant aspects of the site.
+to allow me to spend more time on more inportant aspects of the site which I seemed to struggle with ie. products models.
 
 
-### Acknowledgements
+## Acknowledgements
 
 - I received inspiration for this project from multiple shopping sites such as ridestore.com, absolute-snow.co.uk and many more.
 - Many thanks to all the tutors at CI who helped me fix many bugs within my products/models.py file when it started to error out saying there 
 was already a products table there when there wasnt. 
-- Shout out to my mentor Brian Mc
+- Shout out to my mentor Brian Macharia, for the help tutoring me throughout the course!
 - 
 
 
