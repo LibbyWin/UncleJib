@@ -12,5 +12,5 @@ function sendMail(contactForm) {
             console.log("FAILED", error);
         }
     );
-    return false;  // To block from loading a new page
+    return false;  // To block from loading a new page - this will allow for a user to send messages to the company
 }

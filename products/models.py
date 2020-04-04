@@ -4,6 +4,10 @@ from django.template.defaultfilters import slugify
 # Create your models here.
 
 class Product(models.Model):
+    """
+    the choices allows for the model to render the categories
+    that are shown below 
+    """
     CHOICE = (
         ('all_mountain', 'All Mountain'),
         ('big_mountain', 'Big Mountain'),

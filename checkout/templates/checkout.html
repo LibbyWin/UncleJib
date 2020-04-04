@@ -3,6 +3,10 @@
 {% load bootstrap_tags %}
 
 {% block head_js %}
+
+<!-- creating the checkout
+below is the JS for stipe payment
+ -->
 <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
 <script type="text/javascript">
     //<![CDATA[
@@ -15,7 +19,7 @@
 {% block title %} {% endblock %}
 
 {% block content %}
-
+<!--CHeckout for whats in your cart at the time  -->
 <div class="container">
 <div class="text-center">
 <br>
@@ -42,13 +46,13 @@
     {% endfor %}
 </div>
 </div>
-
+<!--divider-->
 <section class="divider">
     <div class="col-12">
         <hr class="block-divider">
     </div>
 </section>
-
+<!--Total amount to pay-->
 <div class="row">
     <div class="col-sm">
         <div class="text-center">
@@ -58,7 +62,7 @@
         </div>
     </div>
 </div>
-
+<!--divider-->
 <section class="divider">
     <div class="col-12">
         <hr class="block-divider">
@@ -66,7 +70,7 @@
 </section>
 
 <br>
-
+<!--stripe form payment-->
 <div class="col-mad-4 offset-md-4">
     <form role="form" method="post" id="payment-form" action="{% url 'checkout' %}">
     

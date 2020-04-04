@@ -3,7 +3,7 @@
 {% load bootstrap_tags %}
 
 {% block title %} Cart {% endblock %}
-
+<!--Cart html page-->
 {% block content %}
 <div class="text-cent">
     <br>
@@ -13,7 +13,7 @@
 </div>
 
 <br>
-
+<!--whatever the user has added into their cart will be added here-->
 <div class="row mx-auto">
     <div class="col-12 col-sm-12 col-md-12 col-lg-12 text-center">
         <table class="table table_cart">
@@ -57,6 +57,7 @@
             
         </table>
     </div>
+    <!--double checking the user knows what they have in their cart-->
     <div class="col-12 col-sm-12 col-md-12 col-lg-12 text-center">
         <table class="table table_cart">
             <thead class="thead_cart">
@@ -85,6 +86,7 @@
                 
             </tbody>
         </table>
+        <!--bright button for checkout so they know where to go -->
         <div class="mx-auto" style="width: 300px;">
             <a href="{% url 'checkout' %}">
                 <button type="button" class="btn btn-warning btn-block">Proceed to Purchase as a Guest</button>
