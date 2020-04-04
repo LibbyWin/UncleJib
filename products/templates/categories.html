@@ -1,28 +1,26 @@
   {% extends 'base.html' %}
 
 {% block title %}
-<h1> Product Range </h1> 
+Product Range
 {% endblock %}
 
 {% block content %}
-<div class="contain">
+<div class="container">
 
 
 
 {% for product in products %}
     <div class="row">
-    
         <div class="col-sm">
             <div class="text-center">
             <br>
-            
             <br>
                 <div class="product" style="background-image: url('{{ MEDIA_URL }}{{ product.image_01 }}')"></div>
             </div>
             <div class="text-center">
             <br>
                 <h3>{{ product.name }}</h3>
-                <br>
+                
                 <p>£  {{product.price}}</p>
                 <a class="btn btn-primary" href="{% url 'product_detail' product.id %}" role="button">Detials</a>
             </div>
