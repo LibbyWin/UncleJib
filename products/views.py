@@ -12,8 +12,13 @@ def product(request, product_id):
     """
     product = get_object_or_404(Product, id=product_id)
 
-    
-    return render(request, "product.html", {"product": product})
+    if request.method == 'POST' and request.user.is_authenticated and request.POST['content'].strip() != '':
+    Review.objects.create(product=product,
+                          user=request.user,
+                          content=request.POST['content'])
+
+    reviews = Review.objects.filter(product=product)
+    return render(request, "product.html", {"product": product, 'reviews': reviews})
 
 def all_products(request):
     """
