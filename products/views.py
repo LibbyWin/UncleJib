@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 from .models import Product
+from reviews.models import Review
 
 
 # Create your views here.
@@ -13,9 +14,7 @@ def product(request, product_id):
     product = get_object_or_404(Product, id=product_id)
 
     if request.method == 'POST' and request.user.is_authenticated and request.POST['content'].strip() != '':
-    Review.objects.create(product=product,
-                          user=request.user,
-                          content=request.POST['content'])
+        Review.objects.create(product=product, user=request.user, content=request.POST['content'])
 
     reviews = Review.objects.filter(product=product)
     return render(request, "product.html", {"product": product, 'reviews': reviews})
