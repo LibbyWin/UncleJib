@@ -9,7 +9,9 @@ from reviews.models import Review
 def product(request, product_id):
     """
     show an individual product with all its detail
-    show on the page
+    show on the page - Added a reviews section so when a user is logged
+    in they can review what they have previously bought. However if they are 
+    not logged in they can only see the reviews.
     """
     product = get_object_or_404(Product, id=product_id)
 
