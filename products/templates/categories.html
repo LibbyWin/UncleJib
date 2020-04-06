@@ -7,11 +7,16 @@ Product Range
 {% block content %}
 <div class="container">
 
-
+<br>
+    <div class="text-center">
+        <h1>We've Selected These Snowboards For You...</h1>
+    </div>
+    
 <!--The Categories page showing all the snowboards that are within the set category-->
-{% for product in products %}
-    <div class="row">
-        <div class="col-sm">
+
+ <div class="row">
+    {% for product in products %}   
+        <div class="col-sm-4">
             <div class="text-center">
             <br>
             <br>
@@ -25,7 +30,6 @@ Product Range
                 <a class="btn btn-primary" href="{% url 'product_detail' product.id %}" role="button">Detials</a>
             </div>
         </div>
-    </div>
     {% endfor %}
 </div>
 

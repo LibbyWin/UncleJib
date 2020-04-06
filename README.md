@@ -132,13 +132,13 @@ their questions they can simply and quickly email Uncle Jib's and get an answer 
 
 - Register
 - - Within this page, there is a large title saying 'Create An Account'. A form underneith asks for teh user to enter in a valid email address, username, 
-password x2.
+password x2. However, there is a link just below the title allowing users with existing acounts to sign in.
 
 - Login
-- - 
+- - Here there are simply 2 text forms displaying username and password. If the username ans password are not correct it will return an error.
 
 - Logout
-- - 
+- - When the logout button is pressed, it logs the user out and renders the index page.
 
 ## furture features
 There are many future features I would like to implement in the future to allow for a better user experience.
@@ -227,47 +227,30 @@ Found within the `checkout app`, will show how the form is filled out on the sit
 
 ## Testing
 
-The code below will delete the migrations due to an occuring error which occured multiple
+1. The code below will delete the migrations due to an occuring error which occured multiple
  times. In order to migrate my files, I had to delete migrations and remigrate them 
  to the products model.py.
-`find . -path "*/migrations/*.py" -not -name "__init__.py" -delete`
-`find . -path "*/migrations/*.pyc"  -delete `  
-`python manage.py migrate UncleJibs zero`
-`python3 manage.py runserver --run-sync` 
- - These few lines of code allowed for me to delete and reimport any migrations I needed to my project. However countless times I had to manually 
+    1. `find . -path "*/migrations/*.py" -not -name "__init__.py" -delete`
+    2. `find . -path "*/migrations/*.pyc"  -delete `  
+    3. `python manage.py migrate UncleJibs zero`
+    4. `python3 manage.py runserver --run-sync` 
+
+ These few lines of code allowed for me to delete and reimport any migrations I needed to my project. However countless times I had to manually 
  delete the migrations folders, __pycache__, db.sqlite3 files to ensure that there was a hard reboot and reinstallation of `makemigrations` and `migrate`.
  After finding out this issue, I had to understand how you can allow a translator to translate part of the URL. 
 
-- Some testing was done within the products app to ensure that my spelling for 'products' and 'product' were caught. 
+- Some testing was done within the products app to ensure that my spelling for 'products' and 'product' were caught. This kept rendering an error 
+trying to product something that wasn't there due to my spelling mistakes.
 
 - When creating the reviews section wihtin each individual product I chose to use a ForeignKey instead of a OneToOne relation key.
 I chose to add a review system in to add some unique use for the user. They need to create an account and log in inorder to write a review on any 
 product. If however, the user is not logged in then they can only see what reviews have been left.
-
 
 - While importing my code within jinja, I came across multiple issues with {{_______}}. My issues came from not opening and closing my jinja correctly 
 and due to not understanding that when redirecting to a view to display information a certain singular database item needs to pass in some way of itentifying 
 that item. This was through giving an ID to the database item. However I went over this multiple times within the course and got extra help to understand where 
 I was going wrong.
 
-
-
-
-
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for 
-describing your testing process is via scenarios, such as:
-
-1. Contact form:
-    1. Go to the "Contact Us" page
-    2. Try to submit the empty form and verify that an error message about the required fields appears
-    3. Try to submit the form with an invalid email address and verify that a relevant error message appears
-    4. Try to submit the form with all inputs valid and verify that a success message appears.
-
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
-
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
-
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
 
 ## Deployment
 
