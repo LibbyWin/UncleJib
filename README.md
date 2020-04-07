@@ -106,7 +106,7 @@ Below this is the checkout station. The user is asked to review their cart order
 - - The search bar will only render an item if the name is spelt correctly and is within the database. If the item is not within the database then it  return a blank screen
 
 - About
-- - Here is where users can learn more about Uncle Jib's. There is a picture of the original family behind Uncle Jib'd and text about their story and a map providing 
+- - Here is where users can learn more about Uncle Jib's. There is text about their story and a map providing 
 the location of their warehouse/shops fo thoughs who want to return items in person.
 - - At the end there is a section that provides the user with information on environmental features that Uncle jib's enforce throughout their company.
 

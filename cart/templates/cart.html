@@ -8,55 +8,50 @@
 <div class="text-cent">
     <br>
     <div class="text-center product_title">
-    Your Shopping Cart
+    <font color="#2fb8ce">Your Shopping Cart</font>
     </div>
 </div>
 
 <br>
 <!--whatever the user has added into their cart will be added here-->
-<div class="row mx-auto">
+<div class="row">
     <div class="col-12 text-center">
-        <table class="table table_cart">
-            {% for item in cart_items %}
-                <thead class="thead_cart">
-                    <tr>
-                       <th colspan="4">
-                           Your Items
-                       </th>
-                    </tr>
-                </thead>
-            
-                <tr>
-                    <td>
-                        <div class="product" style="background-image: url('{{ MEDIA_URL }}{{ item.product.image_01 }}')"></div>
-                    </td>
-                    <td class="text-left">
-                        <p>{{ item.product.name }}</p>
-                        <br>
-                        <p>£{{ item.product.price }}</p>   
-                    </td>
-                    <td>
-                        <p>{{ item.quantity }} x £{{ item.product.price }}</p>
-                    </td>
-                    <td>
-                
-                    <form class="form-inline" method="post" action="{% url 'adjust_cart' item.product.id %}">
-                        {% csrf_token %}
-                            <div class="form-group i">
-                                <label for="exampleInputAmount" class="sr-only">New Qty</label>
-                                    <div class="input-group">
-                                        <div class="imput-group-append">
-                                            <div class="input-group-addon">Qty   </div>
-                                            <input name="quantity" type="number" min="0" max="999" class="form-control">
-                                            <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span>Change Your Order?</button>
-                                        </div>    
-                                    </div>
+        <div class="table">
+            <table class="table table_cart">
+                {% for item in cart_items %}
+                    <div class="Rtable Rtable--4cols Rtable--collapse">
+                        <div class="Rtable-cell Rtable-cell--head">
+                            <div class="product" style="background-image: url('{{ MEDIA_URL }}{{ item.product.image_01 }}')">
                             </div>
-                    </form>
-                     </td>      
-                </tr>
-            {% endfor %}
-        </table>
+                        </div>
+                        <div class="Rtable-cell">
+                        <br>
+                            <p>{{ item.product.name }}</p>
+                            <p>£{{ item.product.price }}</p>
+                        </div>
+                        <div class="Rtable-cell">
+                            <p>{{ item.quantity }} x £{{ item.product.price }}</p>
+                        </div>
+                        <div class="Rtable-cell Rtable-cell--foot">
+                            <form class="form-inline" method="post" action="{% url 'adjust_cart' item.product.id %}">
+                                {% csrf_token %}
+                                    <div class="form-group i">
+                                        
+                                            <div class="input-group">
+                                                <div class="imput-group-append">
+                                                    <div class="input-group-addon"><font color="#c5c5c5"><strong>Qty</strong></font></div>
+                                                    <input name="quantity" type="number" min="0" max="20" class="form-control">
+                                                    <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span>Change Your Order?</button>
+                                                </div>    
+                                            </div>
+                                        
+                                    </div>
+                            </form>
+                        </div>
+                    </div>
+                {% endfor %}
+            </table>
+        </div>
     </div>
     <!--double checking the user knows what they have in their cart-->
     <div class="col-12 text-center">

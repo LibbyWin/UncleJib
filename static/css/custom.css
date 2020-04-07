@@ -11,6 +11,9 @@ h5 {
 color: #2fb8ce;
 }
 
+p {
+    color: #c5c5c5;
+}
 /*---------------------------------- product.html page -----------------------------*/
 
 .product_title {
@@ -120,7 +123,7 @@ button[type="submit"] {
 /* divider for the index and the other pages*/ 
 
 hr {
-  width: 900px;
+  
   height: 5px;
   border: 0;
   background-color: rgb(226, 226, 226);
@@ -142,10 +145,26 @@ hr {
    margin: 0 auto 0 auto;
  }
 
-.footer {
-    position: relative;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   color: white;
+.copyright {
+  color: white;
+}
+
+
+@breakpoint: 500px;
+
+/* Responsive
+==================================== */
+@media all and (max-width: @breakpoint) {
+  .Rtable--collapse  {
+    display: block;
+    > .Rtable-cell { width: 100% !important; }
+    > .Rtable-cell--foot { margin-bottom: 1em; }
+  }
+}
+
+// Non-Flex modernizer fallback
+.no-flexbox .Rtable {
+  display: block;
+  > .Rtable-cell { width: 100%; }
+  > .Rtable-cell--foot { margin-bottom: 1em; }
 }
