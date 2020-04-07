@@ -15,50 +15,51 @@
 <br>
 <!--whatever the user has added into their cart will be added here-->
 <div class="row mx-auto">
-    <div class="col-12 col-sm-12 col-md-12 col-lg-12 text-center">
+    <div class="col-12 text-center">
         <table class="table table_cart">
-            <thead class="thead_cart">
-                <tr>
-                    <th colspan="4">
-                        Your Items
-                    </th>
-                </tr>
-            </thead>
             {% for item in cart_items %}
-            <tr>
-                <td>
-                    <div class="product" style="background-image: url('{{ MEDIA_URL }}{{ item.product.image_01 }}')"></div>
-                </td>
-                <td class="text-left">
-                    <p>{{ item.product.name }}</p>
-                    <br>
-                    <p>£{{ item.product.price }}</p>   
-                </td>
-                <td>
-                    <p>{{ item.quantity }} x £{{ item.product.price }}</p>
-                </td>
-                <td>
-                
-                <form class="form-inline" method="post" action="{% url 'adjust_cart' item.product.id %}">
-                    {% csrf_token %}
-                    <div class="form-group i">
-                        <label for="exampleInputAmount" class="sr-only">New Qty</label>
-                        <div class="input-group">
-                        <div class="imput-group-append">
-                            <div class="input-group-addon">Qty   </div>
-                            <input name="quantity" type="number" min="0" max="999" class="form-control">
-                        <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span>Change Your Order?</button>
-                    </div>    
-                    </div>
-                    </div>
-                </form>
-                </td>      
-            </tr>
+                <thead class="thead_cart">
+                    <tr>
+                       <th colspan="4">
+                           Your Items
+                       </th>
+                    </tr>
+                </thead>
             
+                <tr>
+                    <td>
+                        <div class="product" style="background-image: url('{{ MEDIA_URL }}{{ item.product.image_01 }}')"></div>
+                    </td>
+                    <td class="text-left">
+                        <p>{{ item.product.name }}</p>
+                        <br>
+                        <p>£{{ item.product.price }}</p>   
+                    </td>
+                    <td>
+                        <p>{{ item.quantity }} x £{{ item.product.price }}</p>
+                    </td>
+                    <td>
+                
+                    <form class="form-inline" method="post" action="{% url 'adjust_cart' item.product.id %}">
+                        {% csrf_token %}
+                            <div class="form-group i">
+                                <label for="exampleInputAmount" class="sr-only">New Qty</label>
+                                    <div class="input-group">
+                                        <div class="imput-group-append">
+                                            <div class="input-group-addon">Qty   </div>
+                                            <input name="quantity" type="number" min="0" max="999" class="form-control">
+                                            <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span>Change Your Order?</button>
+                                        </div>    
+                                    </div>
+                            </div>
+                    </form>
+                     </td>      
+                </tr>
+            {% endfor %}
         </table>
     </div>
     <!--double checking the user knows what they have in their cart-->
-    <div class="col-12 col-sm-12 col-md-12 col-lg-12 text-center">
+    <div class="col-12 text-center">
         <table class="table table_cart">
             <thead class="thead_cart">
                 <tr>
@@ -74,14 +75,12 @@
                     </td>
                 </tr>
                 <tr>
+                
                     <td class="text-center">
                         Your total is:   <strong>  £{{ total }}</strong>
                         <br>
-                        
-                        Your product: <strong>{{ item.product.name }}</strong>
-                        <br>
-                        Quantity: <strong>{{ item.quantity }}</strong>
                     </td>
+                    
                 </tr>
                 
             </tbody>
@@ -92,9 +91,7 @@
                 <button type="button" class="btn btn-warning btn-block">Proceed to Purchase as a Guest</button>
             </a>
         </div>
-    {% endfor %}
-    
+        
+    </div>
 </div>
-</div>
-
 {% endblock %}

@@ -252,7 +252,7 @@ that item. This was through giving an ID to the database item. However I went ov
 I was going wrong.
 
 
-## Deployment
+## Deployment ----------------------------------------------EDIT-------------------------------------------------------------
 
 This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
 
@@ -281,12 +281,13 @@ to products to product design for the site.
 to allow me to spend more time on more inportant aspects of the site which I seemed to struggle with ie. products models.
 
 
+
 ## Acknowledgements
 
 - I received inspiration for this project from multiple shopping sites such as ridestore.com, absolute-snow.co.uk and many more.
 - Many thanks to all the tutors at CI who helped me fix many bugs within my products/models.py file when it started to error out saying there 
 was already a products table there when there wasnt. 
 - Shout out to my mentor Brian Macharia, for the help tutoring me throughout the course!
-- 
+
 
 

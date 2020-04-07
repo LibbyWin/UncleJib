@@ -78,6 +78,8 @@ color: #2fb8ce;
     min-height: 40px;
 }
 
+table {
+width: 100%;}
 /* ------------------------------- CONTACT.HTML---------------------------------------------- */
 
 .uppercase {
@@ -139,3 +141,11 @@ hr {
    background-color: grey;
    margin: 0 auto 0 auto;
  }
+
+.footer {
+    position: relative;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   color: white;
+}
