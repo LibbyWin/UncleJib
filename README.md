@@ -8,7 +8,7 @@ We are all about the experience here at Uncle Jib's and want to bring you the ve
 all enjoy browsing and hope to see you again soon.
 
 
-## why was this site created?
+## Why was this site created?
 Uncle Jib's webshope has been designed and built by Libby Winfield as a final project for the Code Institute Full Stack Web Development 
 Diploma. The purpose of this shopping site is to allow for new customers to shop on a safe and secure site in order to shop for the latests
 snowboards and equipment. Specifically aimed at customers who enjoy being outdoors in the snowy mountains looking for the highest quality 
@@ -17,14 +17,14 @@ and stylist snowbaords to suit their riding needs.
 ## UX
 
 #### Business Goals
-The goals for Uncle Jib's website on a buiness front are:
-- Providing a professional online shop where users can easily fine their way around the site.
+The goals for Uncle Jib's website on a business front are:
+- Providing a professional online shop where users can easily find their way around the site.
 - There are links to all social media to provide Uncle Jib's with a brand awareness for all customers.
 
 #### Visitor Goals
 - Allows for shoppers to find the best snowboard for them, by providing descriptions and information relevant to each individual snowboard.
 - Enjoy browsing for those who like to see what new products are being released.
-- Ensures the users know what type of snowboarder type they are. They can choose what boarder suits their riding style and can find a suitable 
+- Ensures the users know what type of snowboarder they are. They can choose what boarder suits their riding style and can find a suitable 
 board from there.
 - Buying for a trustworthy online dealer.
 

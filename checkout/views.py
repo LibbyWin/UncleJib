@@ -39,7 +39,7 @@ def checkout(request):
             try:
                 customer = stripe.Charge.create(
                     amount = int(total * 100),
-                    currency = "EUR",
+                    currency = "GBP",
                     description = request.user.email,
                     card = payment_form.cleaned_data['stripe_id'],
                 )
@@ -49,12 +49,12 @@ def checkout(request):
             if customer.paid:
                 messages.error(request, "You have successfully paid")
                 request.session['cart'] = {}
-                return redirect(reverse('products'))
+                return redirect(reverse('index'))
             else:
                 messages.error(request, "Unable to take payment")
         else:
             print(payment_form.errors)
-            messages.error(request, "We were unable to take a payment with that card!")
+            messages.error(request, "We were unable to take a payment with that card, Please try another one!")
     else:
         payment_form = MakePaymentForm()
         order_form = OrderForm()

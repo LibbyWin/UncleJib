@@ -16,8 +16,7 @@
 <!--whatever the user has added into their cart will be added here-->
 <div class="row">
     <div class="col-12 text-center">
-        <div class="table">
-            <table class="table table_cart">
+                    
                 {% for item in cart_items %}
                     <div class="Rtable Rtable--4cols Rtable--collapse">
                         <div class="Rtable-cell Rtable-cell--head">
@@ -32,25 +31,23 @@
                         <div class="Rtable-cell">
                             <p>{{ item.quantity }} x £{{ item.product.price }}</p>
                         </div>
-                        <div class="Rtable-cell Rtable-cell--foot">
-                            <form class="form-inline" method="post" action="{% url 'adjust_cart' item.product.id %}">
+                        <div class="Rtable-cell">
+                            <form class="form-inline justify-content-center" method="post" action="{% url 'adjust_cart' item.product.id %}" >
                                 {% csrf_token %}
                                     <div class="form-group i">
-                                        
                                             <div class="input-group">
                                                 <div class="imput-group-append">
-                                                    <div class="input-group-addon"><font color="#c5c5c5"><strong>Qty</strong></font></div>
+                                                    <div class="input-group-addon"><font color="#c5c5c5"><strong>Qty Change?</strong></font></div>
                                                     <input name="quantity" type="number" min="0" max="20" class="form-control">
                                                     <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span>Change Your Order?</button>
                                                 </div>    
                                             </div>
-                                        
                                     </div>
                             </form>
                         </div>
                     </div>
                 {% endfor %}
-            </table>
+            
         </div>
     </div>
     <!--double checking the user knows what they have in their cart-->
@@ -58,7 +55,7 @@
         <table class="table table_cart">
             <thead class="thead_cart">
                 <tr>
-                    <th colspan="4">
+                    <th> 
                         Check Out
                     </th>
                 </tr>
@@ -83,7 +80,7 @@
         <!--bright button for checkout so they know where to go -->
         <div class="mx-auto" style="width: 300px;">
             <a href="{% url 'checkout' %}">
-                <button type="button" class="btn btn-warning btn-block">Proceed to Purchase as a Guest</button>
+                <button type="button" class="btn btn-warning btn-block">Proceed to Checkout</button>
             </a>
         </div>
         

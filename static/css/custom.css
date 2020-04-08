@@ -1,6 +1,7 @@
 body {
     background-color: #2c2e2f;
     color: #c5c5c5;
+    width: 100%;
 }
 
 h1,
@@ -152,8 +153,8 @@ hr {
 
 @breakpoint: 500px;
 
-/* Responsive
-==================================== */
+/* Responsive*/
+==================================== 
 @media all and (max-width: @breakpoint) {
   .Rtable--collapse  {
     display: block;
