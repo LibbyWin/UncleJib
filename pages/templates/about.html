@@ -2,6 +2,22 @@
 
 {% block title %}About {% endblock %}
 
+{% block js %}
+  <!--api key-->
+    <script>
+        function initMap() {
+            var yorkshire = {lat: 54.084119, lng: -1.020924};
+                var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 10,
+                center: yorkshire
+                });
+                var marker = new google.maps.Marker({position: yorkshire, map: map});
+            }
+    </script>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXT63vNuqgZPy_jF8Z5QUTDE1abRdC89g&callback=initMap"></script>
+{% endblock %}
+
 {% block content %}
 <div class="container-fluid">
     <div class="row">
@@ -25,8 +41,12 @@
                             <h2>Find Us Here</h2>
                             </div>
                             <br>
-                            <!--<div id="map">
-                            </div>-->
+
+                            
+                            <div id="map">
+                            </div>
+                            
+
                         </div>
                         <br>
                         <div class="col-sm">
@@ -93,5 +113,7 @@
         </div>
     </div>
 </div>
+
+
 
 {% endblock %}
