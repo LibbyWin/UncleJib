@@ -142,6 +142,10 @@ password x2. However, there is a link just below the title allowing users with e
 - Logout
 - - When the logout button is pressed, it logs the user out and renders the index page.
 
+- Covid
+- - This page just describes what to do during Covid-19 ie. staying inside, it sataes that there may be delays in shipping and returning 
+items due to the virus.
+
 ## furture features
 There are many future features I would like to implement in the future to allow for a better user experience.
 - Creating a 'like' system that all products will have. A user can simply 'like' a product and it be went to a wish list for future visits to 

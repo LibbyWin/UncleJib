@@ -27,3 +27,7 @@ def returns(request):
 def index(request, category_slug=None):
     """A view that renders the index page"""
     return render(request, "index.html")
+
+def covid(request):
+    """A View that renders the covid page"""
+    return render(request, "covid.html")
