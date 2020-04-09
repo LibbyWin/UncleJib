@@ -34,4 +34,5 @@ def category(request, cat):
     will render the products inside a category
     """
     products = Product.objects.filter(choice=cat)
-    return render(request, "categories.html", {"products": products})
+    category_name = products[0].get_choice_display()
+    return render(request, "categories.html", {"products": products, "category_name": category_name})

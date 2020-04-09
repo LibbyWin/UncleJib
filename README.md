@@ -104,6 +104,8 @@ Below this is the checkout station. The user is asked to review their cart order
 
 - Search
 - - The search bar will only render an item if the name is spelt correctly and is within the database. If the item is not within the database then it  return a blank screen
+- - When searching for a specific item, use phrases common to snowboarding, ie. Jib, Camber, Bataleon etc. Try using brand names to filter your 
+search (Bataleon, Burton, Salomon etc).
 
 - About
 - - Here is where users can learn more about Uncle Jib's. There is text about their story and a map providing 

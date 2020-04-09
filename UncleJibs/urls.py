@@ -24,6 +24,7 @@ from .settings import MEDIA_ROOT
 from search import urls as urls_search
 from pages import urls as urls_pages
 from cart import urls as urls_cart
+from pages.views import index
 
 
 urlpatterns = [
@@ -33,6 +34,7 @@ urlpatterns = [
     url(r'^cart/', include(urls_cart)),
     url(r'^checkout/', include(urls_checkout)),
     url(r'^search/', include(urls_search)),
+    url(r'^$', index, name='index'),   
     url(r'^pages/', include(urls_pages)),
     url(r'^media/(?P<path>.*)$', static.serve, {'document_root': MEDIA_ROOT})
 ]
