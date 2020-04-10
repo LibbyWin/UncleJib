@@ -14,7 +14,8 @@ class Product(models.Model):
         ('freestyle', 'Freestyle'),
         ('pipe_park', 'Pipe/Park'),
         ('jib_street', 'Jib/Street'),
-        ('boardercross', 'Boardercross')
+        ('boardercross', 'Boardercross'),
+        ('accessory', 'Accessories')
     )
         
     name = models.CharField(max_length=250, default='')
