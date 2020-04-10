@@ -170,3 +170,16 @@ hr {
   > .Rtable-cell--foot { margin-bottom: 1em; }
 }
 
+#wrapper {
+  min-height: 100%; 
+}
+
+.link {
+   color:rgb(226, 226, 226);
+   text-decoration: none; 
+   background-color: none;
+}
+
+.link :hover {
+  text-decoration:none;
+}

@@ -123,10 +123,12 @@
 
 
     <!-- block content-->
+
     {% block content %}
     
     {% endblock %}
-
+       
+  
 
     <!--FOOTER-->
     
@@ -141,50 +143,50 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm">
-                     <h5>Categories </h5>
+                     <h5>Snowboard Categories </h5>
                         <ul>
                     <li>
-                        <div class="thumb-content"><a href="{% url 'category' 'all_mountain' %}">All Mountain Boards</a></div>
+                        <div class="thumb-content"><a href="{% url 'category' 'all_mountain' %}"><div class="link">All Mountain Boards</div></a></div>
                     </li>
                     <li>
-                        <div class="thumb-content"><a href="{% url 'category' 'big_mountain' %}">Big Mountain Boards</a></div>  
+                        <div class="thumb-content"><a href="{% url 'category' 'big_mountain' %}"><div class="link">Big Mountain Boards</div></a></div>  
                     </li>
                     <li>
-                        <div class="thumb-content"><a href="{% url 'category' 'freestyle' %">FreestyleBoards</a></div>  
+                        <div class="thumb-content"><a href="{% url 'category' 'freestyle' %"><div class="link">FreestyleBoards</div></a></div>  
                     </li>
                     <li>
-                        <div class="thumb-content"><a href="{% url 'category' 'pipe_park'%}.">Park/Pipe Boards</a></div>    
+                        <div class="thumb-content"><a href="{% url 'category' 'pipe_park'%}."><div class="link">Park/Pipe Boards</div></a></div>    
                     </li>
                     <li>
-                        <div class="thumb-content"><a href="{% url 'category' 'jib_street' %}">Jib/Street Boards</a></div>  
+                        <div class="thumb-content"><a href="{% url 'category' 'jib_street' %}"><div class="link">Jib/Street Boards</div></a></div>  
                     </li>
                     <li>
-                        <div class="thumb-content"><a href="{% url 'category' 'boardercross' %}">Boardercross Boards</a></div>  
+                        <div class="thumb-content"><a href="{% url 'category' 'boardercross' %}"><div class="link">Boardercross Boards</div></a></div>  
                     </li>
                 </ul>
                 </div>
                 <div class="col-sm">
-                    <h5>Links</h5>
+                    <h5>Useful Links</h5>
                     <ul>
                     <li>
-                        <div class="thumb-content"><a href="{% url 'about' %}">About</a></div>  
+                        <div class="thumb-content"><a href="{% url 'about' %}"><div class="link">About</div></a></div>  
                     </li>
                     <li>
-                        <div class="thumb-content"><a href="{% url 'contact' %}">Contact</a></div>  
+                        <div class="thumb-content"><a href="{% url 'contact' %}"><div class="link">Contact</div></a></div>  
                     </li>
                     <li>
-                        <div class="thumb-content"><a href="{% url 'delivery' %}">Delivery</a></div>    
+                        <div class="thumb-content"><a href="{% url 'delivery' %}"><div class="link">Delivery</div></a></div>    
                     </li>
                     <li>
-                        <div class="thumb-content"><a href="{% url 'faqs' %}">FAQs</a></div>    
+                        <div class="thumb-content"><a href="{% url 'faqs' %}"><div class="link">FAQs</div></a></div>    
                     </li>
                     <li>
-                        <div class="thumb-content"><a href="{% url 'returns' %}">Returns</a></div>  
+                        <div class="thumb-content"><a href="{% url 'returns' %}"><div class="link">Returns</div></a></div>  
                     </li>
                 </ul>
                 </div>
                 <div calss="col-sm">
-                    <h5>Social Links</h5>
+                    <h5>Social Media</h5>
                     <div class="text-center"><a href="https://www.snapchat.com/" target="_blank" title="Snapchat"><i class="fab fa-snapchat-square fa-3x"></i></a></div>
                     <div class="text-center"><a href="https://www.facebook.com/" target="_blank" title="Facebook"><i class="fab fa-facebook-square fa-3x"></i></a></div>
                     <div class="text-center"><a href="https://www.instagram.com/" target="_blank" title="Instagram"><i class="fab fa-instagram-square fa-3x"></i></a></div>
