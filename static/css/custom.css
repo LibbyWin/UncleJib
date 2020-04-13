@@ -10,10 +10,15 @@ h3,
 h4,
 h5 {
 color: #2fb8ce;
+font-weight: 300;
 }
 
 p {
     color: #c5c5c5;
+}
+
+.navbar-custom {
+    background-color: #3b3b3b;
 }
 /*---------------------------------- product.html page -----------------------------*/
 

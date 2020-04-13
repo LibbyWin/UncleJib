@@ -47,6 +47,8 @@ onto those chosen platforms to allow users spread brand awarenss.
 specific item. 
 - - On the home page, on the 'Select a Snowboard Category' there are two icons, Snowflakes and  Snowman. These icons are placed on the 
 snowboard categories to add some character to the cards.  
+- - Within the actual site tab itself there is a small icon which represents the website logo. However, the original logo is too large to 
+fit, so the main style of the snow goggles has been added with the same colours, to match the entire site.
 
 ### Colours
 - Specific colours are shown and have been specifically chosen becuase they work well with each other.
@@ -269,7 +271,20 @@ In particular, you should provide all details of the differences between the dep
 
 In addition, if it is not obvious, you should also describe how to run your code locally.
 
+### Heroku Deployment
+1. Create a `requirements.txt` file in the terminal.
+2. Create a `Procfile` in the terminal.
+3. Push these new commits to GitHub.
+4. Create a new app on the Heroku site.
+5. Click 'Deploy', select the deployment method to GitHub.
+6. Click onto Herokus dashboard, select 'Settings' 'Reveal Config Var'.
+7. Set the following config vars... 
+| Key | Value |
+|---|---|
 
+
+
+8. 
 ### When commiting to Github, follow theres steps...
 1. Ensure you are on the /environment/ in your ternimal.
 2. If not, use `cd ..` to got back one file at a time till you reach 'environment'.

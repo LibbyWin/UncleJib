@@ -1,11 +1,13 @@
-{% load static %}
+{% load staticfiles %}
 
 <!doctype html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+    <!--Add icon logo image-->
+    <link rel="icon" href="{% static 'images/iconlogo1.png' %}" type="image/x-icon">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!--fontAwesome-->
@@ -18,11 +20,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <title>{% block title %} {% endblock %}</title>
+ 
 
   </head>
   <body>
     <!--NAV BAR-->
-    <nav class="navbar navbar-expand-xl navbar-light bg-dark sticky-top">
+    <nav class="navbar navbar-expand-xl navbar-custom sticky-top">
         <a href="{% url 'index' %}" class="navbar-brand">
             <img width="200px" height="70px"src="{% static 'images/logo2.JPG' %}" style="position:relative;top:-10px p-2">
         </a>
@@ -90,13 +93,13 @@
             <div class="carousel-inner">
             
                 <div class="carousel-item active">
-                    <img src="{% static 'images/mountian.jpg' %}" alt="snowboard" width="100%" height="550">
+                    <img src="{% static 'images/mountian.jpg' %}" alt="snowboard" width="100%" height="600">
                 </div>
                 <div class="carousel-item">
-                    <img src="{% static 'images/snowboarding-1.jpg' %}" alt="snowboard" width="100%" height="550">
+                    <img src="{% static 'images/snowboarding-1.jpg' %}" alt="snowboard" width="100%" height="600">
                 </div>
                 <div class="carousel-item">
-                    <img src="{% static 'images/snowboarding-2.jpg' %}" alt="snowboard" width="100%" height="550">
+                    <img src="{% static 'images/snowboarding-2.jpg' %}" alt="snowboard" width="100%" height="600">
                 </div>
             
             </div>
@@ -135,7 +138,7 @@
     <!--FOOTER-->
     
         <!--FOOTER-->
-    <div class="footer bg-dark text-white mt-5 p-5">
+    <div class="footer navbar-custom text-white mt-5 p-5">
         <div class="container">
             <p class="lead text-center">
                 <strong>Please note ...</strong>   Due to <a href="{% url 'covid' %}">Covid-19 </a>there are delays to shippings and returns.
