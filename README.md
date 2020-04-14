@@ -1,7 +1,7 @@
 
 
 # Welcome to Uncle Jib's!
-[![Build Status](https://travis-ci.org/Wini996/unclejibs.svg?branch=master)](https://travis-ci.org/Wini996/unclejibs)
+[![Build Status](https://travis-ci.com/Wini996/UncleJib.svg?branch=master)](https://travis-ci.com/Wini996/UncleJib)
 ## The Snow Sports Specialists
 
 Here at Uncle Jib's we are a family run retailers who love snow and everything to do with it. We will get you the right equipment
