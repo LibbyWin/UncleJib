@@ -20,6 +20,8 @@ p {
 .navbar-custom {
     background-color: #3b3b3b;
 }
+
+
 /*---------------------------------- product.html page -----------------------------*/
 
 .product_title {
@@ -110,7 +112,6 @@ width: 100%;}
 button[type="submit"] {
     margin-top: 15px;
     margin-bottom: 20px;
-    background-color: #e84610;
     color: #fafafa;
 }
 
@@ -158,10 +159,8 @@ hr {
 
 
 
-@breakpoint: 500px;
 
-/* Responsive*/
-==================================== 
+/* Responsive*/ 
 @media all and (max-width: @breakpoint) {
   .Rtable--collapse  {
     display: block;
@@ -170,7 +169,6 @@ hr {
   }
 }
 
-// Non-Flex modernizer fallback
 .no-flexbox .Rtable {
   display: block;
   > .Rtable-cell { width: 100%; }
@@ -184,7 +182,6 @@ hr {
 .link {
    color:rgb(226, 226, 226);
    text-decoration: none; 
-   background-color: none;
 }
 
 .link :hover {
