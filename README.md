@@ -61,7 +61,7 @@ would be a bright contrast and would strain the users eyes when viewing the site
 
 ### Styling
 - There are specific styling additions to the majrity of the buttons to allow for users to know when they are hovering on them. These buttons 
-will turn from a light blue to dark blue to indicate that these will take oyu to other pages within the site. 
+will turn from a light blue to dark blue to indicate that these will take you to other pages within the site. 
 - Curved edges were chosen on buttons to make the site more user friendly. This is a common styling choice within bootstrap and is commonly 
 used on sites such as Facebook and Instagram.
 
