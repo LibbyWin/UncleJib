@@ -1,0 +1,1 @@
+web: gunicorn UncleJibs.wsgi:application

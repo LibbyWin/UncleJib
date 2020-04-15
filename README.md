@@ -261,7 +261,7 @@ that item. This was through giving an ID to the database item. However I went ov
 I was going wrong.
 
 
-## Deployment ----------------------------------------------EDIT-------------------------------------------------------------
+## Deployment 
 
 This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
 
@@ -282,10 +282,17 @@ In addition, if it is not obvious, you should also describe how to run your code
 7. Set the following config vars... 
 | Key | Value |
 |---|---|
+| STRIPE_PUBLISHABLE | "yourpersonalisedsecretkey"  |
+| STRIPE_SECRET | "yourpersonalisedsecretkey"  |
+| DATABASE_UR | "yourpersonalisedsecretkey"  |
+| SECRET_KEY | "yourpersonalisedsecretkey"  |
+| AWS_ACCESS_KEY_ID |  "yourpersonalisedsecretkey" |
+| AWS_SECRET_ACCESS_KEY | "yourpersonalisedsecretkey"  |
 
-
-
-8. 
+8. Within the terminal make sure you have installed 'gunicorn' and added that 
+program to the requirements.txt file.
+9. Create a Procfile at the root of your directory.
+10. 
 ### When commiting to Github, follow theres steps...
 1. Ensure you are on the /environment/ in your ternimal.
 2. If not, use `cd ..` to got back one file at a time till you reach 'environment'.
