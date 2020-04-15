@@ -311,7 +311,7 @@ program to the requirements.txt file.
 ## Content
 - The descriptions and images for the snowboard and descriptions were all taken from www.absolute-snow.co.uk.
 This site sells everything to do with the outdoors from hiking, wakeboarding and snowboarding. 
-- Big thanks to W3Schools for allowing me to understande certain concepts and use small snippets of their code to push the limits of this site.
+- Big thanks to W3Schools for allowing me to understand certain concepts and use small snippets of their code to push the limits of this site.
 - Big thanks to Scott Kipp for allowing me to take information form your previous MS4 and providing me with inspiration for the categories to products, products to product design for the site. 
 - The accounts app was taken from a previous project that we were taught and had been incorporated into this project, 
 to allow me to spend more time on more inportant aspects of the site which I seemed to struggle with ie. products models.
