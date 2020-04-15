@@ -288,6 +288,7 @@ In addition, if it is not obvious, you should also describe how to run your code
 | SECRET_KEY | "yourpersonalisedsecretkey"  |
 | AWS_ACCESS_KEY_ID |  "yourpersonalisedsecretkey" |
 | AWS_SECRET_ACCESS_KEY | "yourpersonalisedsecretkey"  |
+| DISABLE_COLLECTSTATIC | 1 |
 
 8. Within the terminal make sure you have installed 'gunicorn' and added that 
 program to the requirements.txt file.
