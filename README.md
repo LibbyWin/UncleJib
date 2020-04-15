@@ -71,14 +71,14 @@ The wireframes can be found within the 'static' file under the name 'wireframes'
 
 ## Pages
 - Home Page
-- - On the Home page it is designed to have a selection of three images all to do with snowy mountains, to scroll through these images simply press 
+On the Home page it is designed to have a selection of three images all to do with snowy mountains, to scroll through these images simply press 
 the indication arrors on the left and right side of the images. Below there is information about Uncle Jib's. Further down the pages shows 
 all of the categories of snowboard riding styles which people can select from to suit their own needs. It states the category name, 
 description, image and a button to direct the user to that specific category. At the bottom of this page, is a simple icon row which simply states 
 there is 'Fast and Free Shipping', '24hr Customer Service' and 'Free Returns on all Orders'. 
 
 - Nav bar
-- - Within the Nav bar there are selected pages I'd like the user to go to. These are the specific snowboard categories, which will provide a 
+Within the Nav bar there are selected pages I'd like the user to go to. These are the specific snowboard categories, which will provide a 
 dropdown and render the specific categories. Besides this is the Contact page, where users can email the site provider. The About page is vital for 
 users to know more about how the site originated and who is behind selling their goods. I decided to add the shopping cart as just an icon as it 
 allowed for a more simple and minimal approach to the site. Within the middle of the nav bar is the registration/profile/login/logout.
@@ -86,66 +86,66 @@ These too have icons next to ther title to add an artistic approach. Finally the
 navigation bar as it is set out of the way from the main navigation.
 
 - Products 
-- - When typing into the URL `/products` it will return all the products even though they have a selected category. However, within the product app views.py, 
+When typing into the URL `/products` it will return all the products even though they have a selected category. However, within the product app views.py, 
 there are 3 views. `def product` will render a single product in lots of detail, `def all_products` which will only be rendered if /products is added 
 into the URL and `category` which renders only the snowboards within a particular categegory which is defined within the products models.py 
 under `CHOICE`.
 
 - Cart 
-- - If the users shopping cart is empty, then the cart will return empty and no number icon on the card icon. However, when there are items within the basket a 
+If the users shopping cart is empty, then the cart will return empty and no number icon on the card icon. However, when there are items within the basket a 
 small yellow icon and number will appear next to the cart to indicate how many items are in the cart. 
-- - When there are items added to the cart, a table will appear with the product picture, name, price, quantity and price and then the ammendment section for you to adjust your order.
+When there are items added to the cart, a table will appear with the product picture, name, price, quantity and price and then the ammendment section for you to adjust your order.
 Below this is the checkout station. The user is asked to review their cart order and if correct then proceed to purchase.
-- - This page has been designed where one item goes below the other. This is due to when ordering snowboards, it is very rare to order more than one.
+This page has been designed where one item goes below the other. This is due to when ordering snowboards, it is very rare to order more than one.
 
 - Checkout
-- - Once the user is at the checkout, their product image will appear with the name, price and quantity. They will be told in big text what the total amount to pay is and then be taken
+Once the user is at the checkout, their product image will appear with the name, price and quantity. They will be told in big text what the total amount to pay is and then be taken
  to the payment details form. Within this form is all the neccessary information for purchasing the products, ie. card details, address information etc. once submitted, there 
  will be a confirmation saying 'your order has been successful'.
 
 - Search
-- - The search bar will only render an item if the name is spelt correctly and is within the database. If the item is not within the database then it will 
+The search bar will only render an item if the name is spelt correctly and is within the database. If the item is not within the database then it will 
 return a page stating 'The product cannot be found'.
-- - When searching for a specific item, use phrases common to snowboarding, ie. Jib, Camber, Bataleon etc. Try using brand names to filter your 
+When searching for a specific item, use phrases common to snowboarding, ie. Jib, Camber, Bataleon etc. Try using brand names to filter your 
 search (Bataleon, Burton, Salomon etc).
 
 - About
-- - Here is where users can learn more about Uncle Jib's. There is text about their story and a map providing 
+Here is where users can learn more about Uncle Jib's. There is text about their story and a map providing 
 the location of their warehouse/shops for thoughs who want to return items in person.
-- - At the end there is a section that provides the user with information on environmental features that Uncle jib's enforce throughout their company.
+At the end there is a section that provides the user with information on environmental features that Uncle jib's enforce throughout their company.
 
 - Delivery
-- - On this page, the user can find all the information and policy on delivering their item, if delivery is free and where we deliver within the world.
+On this page, the user can find all the information and policy on delivering their item, if delivery is free and where we deliver within the world.
 
 - Returns
-- - Users can access all the information on returning an item if needed. 
-- - At the bottom of the page if there is anything the that isnt specific to the user, there is a contact button below so they may email Uncle Jib's with their questions.
+Users can access all the information on returning an item if needed. 
+At the bottom of the page if there is anything the that isnt specific to the user, there is a contact button below so they may email Uncle Jib's with their questions.
 
 - Contact
-- - This contact service is fully functional and will send the email to the site owners personal email and will aim to get back to the user within 24hrs.
+This contact service is fully functional and will send the email to the site owners personal email and will aim to get back to the user within 24hrs.
 
 - Reviews
-- - When creating the reviews section within each individual product I chose to use a ForeignKey instead of a OneToOne relation key.
+When creating the reviews section within each individual product I chose to use a ForeignKey instead of a OneToOne relation key.
 I chose to add a review system in to add some unique use for the user. They need to create an account and log in inorder to write a review on any 
 product. If however, the user is not logged in then they can only see what reviews have been left.
 
 - FAQs
-- - The most asked questions are highlighten in blue and the answers are beneith then. I used the blue to highlight the questions so users 
+The most asked questions are highlighten in blue and the answers are beneith then. I used the blue to highlight the questions so users 
 could quickly scan the page and find the most relivent question to them. At the bottom of the page I added a link to the contact form, so if a user couldnt find 
 their questions they can simply and quickly email Uncle Jib's and get an answer back within 24hrs.
 
 - Register
-- - Within this page, there is a large title saying 'Create An Account'. A form underneith asks for the user to enter in a valid email address, username, 
+Within this page, there is a large title saying 'Create An Account'. A form underneith asks for the user to enter in a valid email address, username, 
 password x2. However, there is a link just below the title allowing users with existing acounts to sign in.
 
 - Login
-- - Here there are simply 2 text forms displaying username and password. If the username and password are not correct it will return an error.
+Here there are simply 2 text forms displaying username and password. If the username and password are not correct it will return an error.
 
 - Logout
-- - When the logout button is pressed, it logs the user out and renders the index page.
+When the logout button is pressed, it logs the user out and renders the index page.
 
 - Covid
-- - This page just describes what to do during Covid-19 ie. Staying inside, it states that there may be delays in shipping and returning 
+This page just describes what to do during Covid-19 ie. Staying inside, it states that there may be delays in shipping and returning 
 items due to the virus.
 
 ## furture features
